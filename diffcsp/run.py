@@ -1,3 +1,14 @@
+import os
+
+os.environ['PROJECT_ROOT'] = "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/"
+os.environ['HYDRA_JOBS'] = "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/hydra" 
+os.environ['WANDB_DIR'] = "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/wandb"
+
+import sys
+sys.path.append(os.environ['PROJECT_ROOT'])
+
+# Rest of your code
+
 from pathlib import Path
 from typing import List
 import sys
@@ -17,7 +28,9 @@ from pytorch_lightning.callbacks import (
 )
 from pytorch_lightning.loggers import WandbLogger
 
-from diffcsp.common.utils import log_hyperparameters, PROJECT_ROOT
+from DiffCSP.diffcsp.common.utils import log_hyperparameters, PROJECT_ROOT
+
+# import DiffCSP
 
 import wandb
 
@@ -76,8 +89,8 @@ def run(cfg: DictConfig) -> None:
             f"Debug mode <{cfg.train.pl_trainer.fast_dev_run=}>. "
             f"Forcing debugger friendly configuration!"
         )
-        # Debuggers don't like GPUs nor multiprocessing
-        cfg.train.pl_trainer.gpus = 0
+        # Debuggers don't like multiprocessing
+        # cfg.train.pl_trainer.gpus = 0
         cfg.data.datamodule.num_workers.train = 0
         cfg.data.datamodule.num_workers.val = 0
         cfg.data.datamodule.num_workers.test = 0
@@ -151,18 +164,16 @@ def run(cfg: DictConfig) -> None:
         callbacks=callbacks,
         deterministic=cfg.train.deterministic,
         check_val_every_n_epoch=cfg.logging.val_check_interval,
-        progress_bar_refresh_rate=cfg.logging.progress_bar_refresh_rate,
-        resume_from_checkpoint=ckpt,
         **cfg.train.pl_trainer,
     )
 
     log_hyperparameters(trainer=trainer, model=model, cfg=cfg)
 
     hydra.utils.log.info("Starting training!")
-    trainer.fit(model=model, datamodule=datamodule)
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=ckpt)
 
     hydra.utils.log.info("Starting testing!")
-    trainer.test(datamodule=datamodule)
+    trainer.test(datamodule=datamodule, ckpt_path="best")
 
     # Logger closing to release resources/avoid multi-run conflicts
     if wandb_logger is not None:
