@@ -4,6 +4,9 @@ os.environ['PROJECT_ROOT'] = "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/Dif
 os.environ['HYDRA_JOBS'] = "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/hydra" 
 os.environ['WANDB_DIR'] = "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/wandb"
 
+from omegaconf import OmegaConf
+
+
 import sys
 sys.path.append(os.environ['PROJECT_ROOT'])
 
@@ -90,13 +93,13 @@ def run(cfg: DictConfig) -> None:
             f"Forcing debugger friendly configuration!"
         )
         # Debuggers don't like multiprocessing
-        # cfg.train.pl_trainer.gpus = 0
+        cfg.train.pl_trainer.gpus = 1
         cfg.data.datamodule.num_workers.train = 0
         cfg.data.datamodule.num_workers.val = 0
         cfg.data.datamodule.num_workers.test = 0
 
         # Switch wandb mode to offline to prevent online logging
-        cfg.logging.wandb.mode = "offline"
+        cfg.logging.wandb.mode = "online"
 
     # Hydra run directory
     hydra_dir = Path(HydraConfig.get().run.dir)
@@ -137,12 +140,14 @@ def run(cfg: DictConfig) -> None:
             settings=wandb.Settings(start_method="fork"),
             tags=cfg.core.tags,
         )
+        wandb_logger.watch(model, log='all', log_freq=100)  # Adjust log_freq as necessary
+
         hydra.utils.log.info("W&B is now watching <{cfg.logging.wandb_watch.log}>!")
-        wandb_logger.watch(
-            model,
-            log=cfg.logging.wandb_watch.log,
-            log_freq=cfg.logging.wandb_watch.log_freq,
-        )
+        #wandb_logger.watch(
+        #   model,
+        #   log=cfg.logging.wandb_watch.log,
+        #   log_freq=cfg.logging.wandb_watch.log_freq,
+        #)
 
     # Store the YaML config separately into the wandb dir
     yaml_conf: str = OmegaConf.to_yaml(cfg=cfg)
@@ -157,6 +162,13 @@ def run(cfg: DictConfig) -> None:
     else:
         ckpt = None
           
+    print("Type of cfg.train.pl_trainer:", type(cfg.train.pl_trainer))
+    print("Contents of cfg.train.pl_trainer:", cfg.train.pl_trainer)
+    
+    trainer_config = OmegaConf.to_container(cfg.train.pl_trainer, resolve=True)
+    print(trainer_config)  # You can print to verify that all values are as expected
+
+
     hydra.utils.log.info("Instantiating the Trainer")
     trainer = pl.Trainer(
         default_root_dir=hydra_dir,
@@ -164,7 +176,9 @@ def run(cfg: DictConfig) -> None:
         callbacks=callbacks,
         deterministic=cfg.train.deterministic,
         check_val_every_n_epoch=cfg.logging.val_check_interval,
-        **cfg.train.pl_trainer,
+        #progress_bar_refresh_rate=cfg.logging.progress_bar_refresh_rate,
+        enable_progress_bar=True,
+        **trainer_config,
     )
 
     log_hyperparameters(trainer=trainer, model=model, cfg=cfg)
