@@ -248,7 +248,7 @@ class CSPDiffusion(BaseModule):
             on_epoch=True,
             prog_bar=True,
         )
-
+# pdb.set_trace()   -- if VSCode is using pdb (standard python package)
         if loss.isnan():
             return None
 

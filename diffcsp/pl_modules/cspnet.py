@@ -182,7 +182,7 @@ class CSPNet(nn.Module):
             | ((cell_offsets[:, 0] == 0) & (cell_offsets[:, 1] < 0))
             | (
                 (cell_offsets[:, 0] == 0)
-                & (cell_offsets[:, 1] == 0)
+                & (cell_offsets[:, 1] == 0) 
                 & (cell_offsets[:, 2] < 0)
             )
         )
@@ -295,4 +295,3 @@ class CSPNet(nn.Module):
             return lattice_out, coord_out, type_out
 
         return lattice_out, coord_out
-

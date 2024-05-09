@@ -20,38 +20,44 @@ import copy
 import numpy as np
 
 
-def diffusion(loader, model, num_evals, step_lr = 1e-5):
-
+def diffusion(loader, model, num_evals, step_lr=1e-5):
+    # Initialize lists to store outputs
     frac_coords = []
     num_atoms = []
     atom_types = []
     lattices = []
     input_data_list = []
-    for idx, batch in enumerate(loader):
 
-        if torch.cuda.is_available():
-            batch.cuda()
-        batch_all_frac_coords = []
-        batch_all_lattices = []
-        batch_frac_coords, batch_num_atoms, batch_atom_types = [], [], []
-        batch_lattices = []
-        for eval_idx in range(num_evals):
+    # Fetch the first batch only
+    first_batch = next(iter(loader))
+    if torch.cuda.is_available():
+        first_batch.cuda()
 
-            print(f'batch {idx} / {len(loader)}, sample {eval_idx} / {num_evals}')
-            outputs, traj = model.sample(batch, step_lr = step_lr)
-            batch_frac_coords.append(outputs['frac_coords'].detach().cpu())
-            batch_num_atoms.append(outputs['num_atoms'].detach().cpu())
-            batch_atom_types.append(outputs['atom_types'].detach().cpu())
-            batch_lattices.append(outputs['lattices'].detach().cpu())
+    # Run the process only for the first batch
+    batch_all_frac_coords = []
+    batch_all_lattices = []
+    batch_frac_coords, batch_num_atoms, batch_atom_types = [], [], []
+    batch_lattices = []
 
-        frac_coords.append(torch.stack(batch_frac_coords, dim=0))
-        num_atoms.append(torch.stack(batch_num_atoms, dim=0))
-        atom_types.append(torch.stack(batch_atom_types, dim=0))
-        lattices.append(torch.stack(batch_lattices, dim=0))
+    # Print and process for each eval
+    for eval_idx in range(num_evals):
+        print(f'Using first batch, sample {eval_idx} / {num_evals}')
+        outputs, traj = model.sample(first_batch, step_lr=step_lr)
+        batch_frac_coords.append(outputs['frac_coords'].detach().cpu())
+        batch_num_atoms.append(outputs['num_atoms'].detach().cpu())
+        batch_atom_types.append(outputs['atom_types'].detach().cpu())
+        batch_lattices.append(outputs['lattices'].detach().cpu())
 
-        input_data_list = input_data_list + batch.to_data_list()
+    # Aggregate results from the evals
+    frac_coords.append(torch.stack(batch_frac_coords, dim=0))
+    num_atoms.append(torch.stack(batch_num_atoms, dim=0))
+    atom_types.append(torch.stack(batch_atom_types, dim=0))
+    lattices.append(torch.stack(batch_lattices, dim=0))
+    
+    # Since we're only using one batch, we convert this single batch to a data list directly
+    input_data_list = first_batch.to_data_list()
 
-
+    # Concatenate all outputs for final results
     frac_coords = torch.cat(frac_coords, dim=1)
     num_atoms = torch.cat(num_atoms, dim=1)
     atom_types = torch.cat(atom_types, dim=1)
@@ -59,10 +65,11 @@ def diffusion(loader, model, num_evals, step_lr = 1e-5):
     lengths, angles = lattices_to_params_shape(lattices)
     input_data_batch = Batch.from_data_list(input_data_list)
 
-
+    # Return the processed data
     return (
         frac_coords, atom_types, lattices, lengths, angles, num_atoms, input_data_batch
     )
+
 
 
 

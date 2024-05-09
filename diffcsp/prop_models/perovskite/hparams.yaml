@@ -71,7 +71,7 @@ logging:
   lr_monitor:
     logging_interval: step
     log_momentum: false
-model:
+model: ## 
   encoder:
     _target_: diffcsp.pl_modules.gnn.DimeNetPlusPlusWrap
     num_targets: ${data.num_targets}

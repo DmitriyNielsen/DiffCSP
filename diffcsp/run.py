@@ -1,6 +1,6 @@
 import os
 
-os.environ['PROJECT_ROOT'] = "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/"
+os.environ['PROJECT_ROOT'] = "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP"
 os.environ['HYDRA_JOBS'] = "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/hydra" 
 os.environ['WANDB_DIR'] = "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/wandb"
 
@@ -140,14 +140,14 @@ def run(cfg: DictConfig) -> None:
             settings=wandb.Settings(start_method="fork"),
             tags=cfg.core.tags,
         )
-        wandb_logger.watch(model, log='all', log_freq=100)  # Adjust log_freq as necessary
+        #wandb_logger.watch(model, log='all', log_freq=100)  # Adjust log_freq as necessary
 
         hydra.utils.log.info("W&B is now watching <{cfg.logging.wandb_watch.log}>!")
-        #wandb_logger.watch(
-        #   model,
-        #   log=cfg.logging.wandb_watch.log,
-        #   log_freq=cfg.logging.wandb_watch.log_freq,
-        #)
+        wandb_logger.watch(
+          model,
+          log=cfg.logging.wandb_watch.log,
+          log_freq=cfg.logging.wandb_watch.log_freq,
+        )
 
     # Store the YaML config separately into the wandb dir
     yaml_conf: str = OmegaConf.to_yaml(cfg=cfg)
@@ -162,11 +162,11 @@ def run(cfg: DictConfig) -> None:
     else:
         ckpt = None
           
-    print("Type of cfg.train.pl_trainer:", type(cfg.train.pl_trainer))
-    print("Contents of cfg.train.pl_trainer:", cfg.train.pl_trainer)
+    #print("Type of cfg.train.pl_trainer:", type(cfg.train.pl_trainer))
+    #print("Contents of cfg.train.pl_trainer:", cfg.train.pl_trainer)
     
     trainer_config = OmegaConf.to_container(cfg.train.pl_trainer, resolve=True)
-    print(trainer_config)  # You can print to verify that all values are as expected
+    #print(trainer_config)  # You can print to verify that all values are as expected
 
 
     hydra.utils.log.info("Instantiating the Trainer")
@@ -178,6 +178,7 @@ def run(cfg: DictConfig) -> None:
         check_val_every_n_epoch=cfg.logging.val_check_interval,
         #progress_bar_refresh_rate=cfg.logging.progress_bar_refresh_rate,
         enable_progress_bar=True,
+        # **cfg.train.pl_trainer,
         **trainer_config,
     )
 

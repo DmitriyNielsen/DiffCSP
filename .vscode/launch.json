@@ -1,0 +1,88 @@
+// # sample:
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Debug Sample with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/scripts/sample.py",
+            "console": "integratedTerminal",
+            "args": [   
+                "--model_path", "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/prop_models/perovskite",
+                "--save_path", "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/Saved_tests",
+                "--formula", "TiO3",
+                "--num_evals", "2",
+                //"--dataset", "perov_5"
+            ],
+            "python": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/diffcsp_2204/bin/python3",
+            "env": {
+                "PYTHONPATH": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP",
+                "HYDRA_FULL_ERROR": "1",
+                "PYTHONWARNINGS": "ignore",
+                "PROJECT_ROOT": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp"
+            }
+        }
+    ]
+}
+// for eval:
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python: Debug Sample with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/scripts/evaluate.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 //"data=perov_5",
+//                 //"expname=exp_0105",
+//                 "--model_path", "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/prop_models/perov_gen",
+//                 "--dataset", "perov_5",
+//             ],
+//             "python": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/diffcsp_2204/bin/python3",
+//             "env": {
+//                 "PYTHONPATH": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP",
+//                 "HYDRA_FULL_ERROR": "1",
+//                 "PYTHONWARNINGS": "ignore",
+//                 "PROJECT_ROOT": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp"
+//             }
+//         }
+//     ]
+// }
+// for measure: 
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python: Debug Sample with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/scripts/compute_metrics.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 //"data=perov_5",
+//                 //"expname=exp_0105",
+//                 //"--model_path", "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/prop_models/perov_gen",
+//                 //"--dataset", "perov_5",
+//                 "--root_path", "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/prop_models/perov_gen",
+//                 "--tasks", "csp",
+//                 "--gt_file", "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/data/perov_5/test.csv",
+//             ],
+//             "python": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/diffcsp_2204/bin/python3",
+//             "env": {
+//                 "PYTHONPATH": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP",
+//                 "HYDRA_FULL_ERROR": "1",
+//                 "PYTHONWARNINGS": "ignore",
+//                 "PROJECT_ROOT": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp",
+//             "extraPaths": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/matminer/build/lib", // for evaluate.py
+//             }
+//         }
+//     ]
+// }
+
+// /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/diffcsp_2204/bin/python3 /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/scripts/compute_metrics.py --root_path /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/prop_models/perov_gen --tasks csp --gt_file /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/data/perov_5/test.csv
+
+
+// /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/diffcsp_2204/bin/python /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/scripts/evaluate.py --model_path /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/prop_models/perov_gen --dataset perov_5

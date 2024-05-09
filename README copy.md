@@ -1,3 +1,5 @@
+AWARE: git is set to folder: /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/.git - everything before will not be pushed / version control.
+
 Hydra loads the "default.yaml" file from the "conf" directory, and any values in this file are accessible as attributes of the cfg object.
 
 
@@ -562,3 +564,16 @@ Hydra loads the "default.yaml" file from the "conf" directory, and any values in
             └── code
 
 200 directories, 359 files
+
+
+(diffcsp_2204)  dmitriynielsen@Dmitriys-MBP New_try02 % 
+ cd /Users/dmitriynielsen/GitHub/DiffCSP/New_try02 ; /usr/bin/env /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/diffcsp_2204/bin/python /Users/dmitriynielsen/.vscode/e
+(diffcsp_2204)  dmitriynielsen@Dmitriys-MBP New_try02 %  cd /Users/dmitriynielsen/Gi
+tHub/DiffCSP/New_try02 ; /usr/bin/env /Users/dmitriynielsen/GitHub/DiffCSP/New_try02
+/diffcsp_2204/bin/python /Users/dmitriynielsen/.vscode/extensions/ms-python.debugpy-
+2024.4.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher 60543 -- /
+Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/scripts/sample.py --model_path
+ /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/prop_models/perovski
+te --save_path /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/Saved_
+tests --formula SiO2 --num_evals 5 
+Backend MacOSX is interactive backend. Turning interactive mode on.
