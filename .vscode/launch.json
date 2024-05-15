@@ -87,33 +87,6 @@
 // /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/diffcsp_2204/bin/python /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/scripts/evaluate.py --model_path /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/prop_models/perov_gen --dataset perov_5
 
 // # sample:
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: Debug Sample with Arguments",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/scripts/sample.py",
-            "console": "integratedTerminal",
-            "args": [   
-                "--model_path", "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/prop_models/perov_csp",
-                "--save_path", "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/Saved_tests",
-                "--formula", "RnCl2",
-                "--num_evals", "2",
-                //"--dataset", "perov_5"
-            ],
-            "python": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/diffcsp_2204/bin/python3",
-            "env": {
-                "PYTHONPATH": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP",
-                "HYDRA_FULL_ERROR": "1",
-                "PYTHONWARNINGS": "ignore",
-                "PROJECT_ROOT": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp"
-            }
-        }
-    ]
-}
-// // # train: 
 // {
 //     "version": "0.2.0",
 //     "configurations": [
@@ -121,11 +94,14 @@
 //             "name": "Python: Debug Sample with Arguments",
 //             "type": "debugpy",
 //             "request": "launch",
-//             "program": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/run.py",
+//             "program": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/scripts/sample.py",
 //             "console": "integratedTerminal",
 //             "args": [   
-//             "--dataset", "perov_5",
-//             "expname", "exp_09052024",
+//                 "--model_path", "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/prop_models/perov_csp",
+//                 "--save_path", "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/Saved_tests",
+//                 "--formula", "RnCl2",
+//                 "--num_evals", "2",
+//                 //"--dataset", "perov_5"
 //             ],
 //             "python": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/diffcsp_2204/bin/python3",
 //             "env": {
@@ -137,4 +113,28 @@
 //         }
 //     ]
 // }
+// # train: 
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Debug Sample with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/run.py",
+            "console": "integratedTerminal",
+            "args": [   
+            "data=perov_5",
+            "expname=exp_09052024",
+            ],
+            "python": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/diffcsp_2204/bin/python3",
+            "env": {
+                "PYTHONPATH": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP",
+                "HYDRA_FULL_ERROR": "1",
+                "PYTHONWARNINGS": "ignore",
+                "PROJECT_ROOT": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp"
+            }
+        }
+    ]
+}
 
