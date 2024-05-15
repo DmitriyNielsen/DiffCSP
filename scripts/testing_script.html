@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.553">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Chili</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="testing_script_files/libs/clipboard/clipboard.min.js"></script>
+<script src="testing_script_files/libs/quarto-html/quarto.js"></script>
+<script src="testing_script_files/libs/quarto-html/popper.min.js"></script>
+<script src="testing_script_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="testing_script_files/libs/quarto-html/anchor.min.js"></script>
+<link href="testing_script_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="testing_script_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="testing_script_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="testing_script_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="testing_script_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Chili</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="cell-1" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>source <span class="st">"/Users/dmitriynielsen/GitHub/LawTech_POC_07052024/bin/activate"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>UsageError: Line magic function `%source` not found.</code></pre>
+</div>
+</div>
+<div id="cell-2" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> read_csv_to_df(filepath):</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_csv(filepath)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Usage</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> read_csv_to_df(<span class="st">'/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/data/perov_5/test.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-3" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df <span class="co"># perov_5 dataset</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Unnamed: 0.1</th>
+<th data-quarto-table-cell-role="th">Unnamed: 0</th>
+<th data-quarto-table-cell-role="th">material_id</th>
+<th data-quarto-table-cell-role="th">cif</th>
+<th data-quarto-table-cell-role="th">formula</th>
+<th data-quarto-table-cell-role="th">heat_all</th>
+<th data-quarto-table-cell-role="th">heat_ref</th>
+<th data-quarto-table-cell-role="th">dir_gap</th>
+<th data-quarto-table-cell-role="th">ind_gap</th>
+<th data-quarto-table-cell-role="th">spacegroup.number</th>
+<th data-quarto-table-cell-role="th">spacegroup.number.conv</th>
+<th data-quarto-table-cell-role="th">cif.conv</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>0</td>
+<td>996</td>
+<td>3961</td>
+<td># generated using pymatgen\ndata_TiOsNOF\n_sym...</td>
+<td>TiOsOFN</td>
+<td>1.16</td>
+<td>1.438331</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>25</td>
+<td>25</td>
+<td># generated using pymatgen\ndata_TiOsNOF\n_sym...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>1</td>
+<td>13356</td>
+<td>11922</td>
+<td># generated using pymatgen\ndata_TlRuO2F\n_sym...</td>
+<td>RuTlO2F</td>
+<td>1.66</td>
+<td>1.604896</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>25</td>
+<td>25</td>
+<td># generated using pymatgen\ndata_TlRuO2F\n_sym...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>2</td>
+<td>17389</td>
+<td>6694</td>
+<td># generated using pymatgen\ndata_BiPtN2O\n_sym...</td>
+<td>PtBiON2</td>
+<td>1.56</td>
+<td>1.569679</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>99</td>
+<td>99</td>
+<td># generated using pymatgen\ndata_BiPtN2O\n_sym...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>3</td>
+<td>5951</td>
+<td>3335</td>
+<td># generated using pymatgen\ndata_VRhNOF\n_symm...</td>
+<td>VRhOFN</td>
+<td>1.56</td>
+<td>1.566713</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>25</td>
+<td>25</td>
+<td># generated using pymatgen\ndata_VRhNOF\n_symm...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>4</td>
+<td>10279</td>
+<td>18565</td>
+<td># generated using pymatgen\ndata_CuAsN3\n_symm...</td>
+<td>CuAsN3</td>
+<td>1.96</td>
+<td>1.957102</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>221</td>
+<td>221</td>
+<td># generated using pymatgen\ndata_CuAsN3\n_symm...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">3780</td>
+<td>3780</td>
+<td>13435</td>
+<td>6797</td>
+<td># generated using pymatgen\ndata_CaCoN2O\n_sym...</td>
+<td>CaCoON2</td>
+<td>1.30</td>
+<td>1.129832</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>99</td>
+<td>123</td>
+<td># generated using pymatgen\ndata_CaCoN2O\n_sym...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3781</td>
+<td>3781</td>
+<td>7763</td>
+<td>3969</td>
+<td># generated using pymatgen\ndata_NaBNOF\n_symm...</td>
+<td>NaBOFN</td>
+<td>1.60</td>
+<td>1.467042</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>25</td>
+<td>25</td>
+<td># generated using pymatgen\ndata_NaBNOF\n_symm...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">3782</td>
+<td>3782</td>
+<td>15377</td>
+<td>17274</td>
+<td># generated using pymatgen\ndata_ZrSnN3\n_symm...</td>
+<td>ZrSnN3</td>
+<td>1.20</td>
+<td>1.205202</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>99</td>
+<td>99</td>
+<td># generated using pymatgen\ndata_ZrSnN3\n_symm...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3783</td>
+<td>3783</td>
+<td>17730</td>
+<td>2839</td>
+<td># generated using pymatgen\ndata_PbAuNOF\n_sym...</td>
+<td>PbAuOFN</td>
+<td>1.50</td>
+<td>1.493302</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>25</td>
+<td>25</td>
+<td># generated using pymatgen\ndata_PbAuNOF\n_sym...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">3784</td>
+<td>3784</td>
+<td>15725</td>
+<td>5807</td>
+<td># generated using pymatgen\ndata_KAsN2O\n_symm...</td>
+<td>AsKON2</td>
+<td>2.42</td>
+<td>1.847347</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>99</td>
+<td>99</td>
+<td># generated using pymatgen\ndata_KAsN2O\n_symm...</td>
+</tr>
+</tbody>
+</table>
+
+<p>3785 rows × 12 columns</p>
+</div>
+</div>
+</div>
+</div>
+<div id="cell-4" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'cif.conv'</span>][<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<pre><code>"# generated using pymatgen\ndata_TiOsNOF\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   4.05632160\n_cell_length_b   4.05632160\n_cell_length_c   4.05632160\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   TiOsNOF\n_chemical_formula_sum   'Ti1 Os1 N1 O1 F1'\n_cell_volume   66.74168093\n_cell_formula_units_Z   1\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Ti  Ti0  1  0.00000000  0.00000000  0.60921094  1.0\n  Os  Os1  1  0.50000000  0.50000000  0.77619935  1.0\n  N  N2  1  0.50000000  0.00000000  0.74200080  1.0\n  O  O3  1  0.50000000  0.50000000  0.23143281  1.0\n  F  F4  1  0.00000000  0.50000000  0.41528400  1.0\n"</code></pre>
+</div>
+</div>
+<div id="cell-6" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install biopython</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Requirement already satisfied: biopython in /Users/dmitriynielsen/anaconda3/lib/python3.11/site-packages (1.83)
+Requirement already satisfied: numpy in /Users/dmitriynielsen/anaconda3/lib/python3.11/site-packages (from biopython) (1.26.3)
+Note: you may need to restart the kernel to use updated packages.</code></pre>
+</div>
+</div>
+<div id="cell-7" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip <span class="bu">list</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Package                Version
+---------------------- -----------
+aiohttp                3.9.3
+aiosignal              1.3.1
+antlr4-python3-runtime 4.9.3
+appnope                0.1.4
+asttokens              2.4.1
+attrs                  23.2.0
+comm                   0.2.2
+debugpy                1.8.1
+decorator              5.1.1
+executing              2.0.1
+filelock               3.13.1
+frozenlist             1.4.1
+fsspec                 2024.2.0
+hydra-core             1.3.2
+idna                   3.6
+ipykernel              6.29.4
+ipython                8.24.0
+jedi                   0.19.1
+Jinja2                 3.1.3
+jupyter_client         8.6.1
+jupyter_core           5.7.2
+lightning-utilities    0.10.1
+MarkupSafe             2.1.5
+matplotlib-inline      0.1.7
+mpmath                 1.3.0
+multidict              6.0.5
+nest-asyncio           1.6.0
+networkx               3.2.1
+numpy                  1.26.4
+omegaconf              2.3.0
+packaging              23.2
+parso                  0.8.4
+pexpect                4.9.0
+pip                    24.0
+platformdirs           4.2.1
+prompt-toolkit         3.0.43
+psutil                 5.9.8
+ptyprocess             0.7.0
+pure-eval              0.2.2
+Pygments               2.17.2
+python-dateutil        2.9.0.post0
+python-dotenv          1.0.1
+pytorch-lightning      2.2.1
+PyYAML                 6.0.1
+pyzmq                  26.0.2
+setuptools             69.5.1
+six                    1.16.0
+stack-data             0.6.3
+sympy                  1.12
+torch                  2.2.1
+torchmetrics           1.3.1
+tornado                6.4
+tqdm                   4.66.2
+traitlets              5.14.3
+typing_extensions      4.10.0
+wcwidth                0.2.13
+yarl                   1.9.4
+Note: you may need to restart the kernel to use updated packages.</code></pre>
+</div>
+</div>
+<div id="cell-8" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> read_csv_to_df(filepath):</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_csv(filepath)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Usage</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> read_csv_to_df(<span class="st">'/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/data/CHILI-3K_CIFs/test.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-9" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">filename</th>
+<th data-quarto-table-cell-role="th">cif</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Wurtzite_TaO.cif</td>
+<td>data_image0\n_chemical_formula_structural ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>RheniumTrioxide_NbO3.cif</td>
+<td>data_image0\n_chemical_formula_structural ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Spinel_YY2O4.cif</td>
+<td>data_image0\n_chemical_formula_structural ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>ZincBlende_MoO.cif</td>
+<td>data_image0\n_chemical_formula_structural ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Fluorite_SnO2.cif</td>
+<td>data_image0\n_chemical_formula_structural ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">92</td>
+<td>ZincBlende_TlO.cif</td>
+<td>data_image0\n_chemical_formula_structural ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">93</td>
+<td>CadmiumChloride_FeO2.cif</td>
+<td>data_image0\n_chemical_formula_structural ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">94</td>
+<td>NickelArsenide_CaO.cif</td>
+<td>data_image0\n_chemical_formula_structural ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">95</td>
+<td>Spinel_BeBe2O4.cif</td>
+<td>data_image0\n_chemical_formula_structural ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">96</td>
+<td>Wurtzite_PtO.cif</td>
+<td>data_image0\n_chemical_formula_structural ...</td>
+</tr>
+</tbody>
+</table>
+
+<p>97 rows × 2 columns</p>
+</div>
+</div>
+</div>
+</div>
+<div id="cell-12" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> read_csv_to_df(filepath):</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_csv(filepath)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Usage</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> read_csv_to_df(<span class="st">'/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/data/mp_20/test.csv'</span>)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>df2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Unnamed: 0.1</th>
+<th data-quarto-table-cell-role="th">Unnamed: 0</th>
+<th data-quarto-table-cell-role="th">material_id</th>
+<th data-quarto-table-cell-role="th">formation_energy_per_atom</th>
+<th data-quarto-table-cell-role="th">band_gap</th>
+<th data-quarto-table-cell-role="th">pretty_formula</th>
+<th data-quarto-table-cell-role="th">e_above_hull</th>
+<th data-quarto-table-cell-role="th">elements</th>
+<th data-quarto-table-cell-role="th">cif</th>
+<th data-quarto-table-cell-role="th">spacegroup.number</th>
+<th data-quarto-table-cell-role="th">spacegroup.number.conv</th>
+<th data-quarto-table-cell-role="th">cif.conv</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>0</td>
+<td>6000</td>
+<td>mp-10009</td>
+<td>-0.575092</td>
+<td>0.8980</td>
+<td>GaTe</td>
+<td>0.000000</td>
+<td>['Ga', 'Te']</td>
+<td># generated using pymatgen\ndata_GaTe\n_symmet...</td>
+<td>194</td>
+<td>194</td>
+<td># generated using pymatgen\ndata_GaTe\n_symmet...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>1</td>
+<td>37702</td>
+<td>mp-1218989</td>
+<td>-0.942488</td>
+<td>0.0000</td>
+<td>SmThCN</td>
+<td>0.044109</td>
+<td>['C', 'N', 'Sm', 'Th']</td>
+<td># generated using pymatgen\ndata_SmThCN\n_symm...</td>
+<td>160</td>
+<td>160</td>
+<td># generated using pymatgen\ndata_SmThCN\n_symm...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>2</td>
+<td>42245</td>
+<td>mp-1225695</td>
+<td>0.064863</td>
+<td>0.0000</td>
+<td>CuNi</td>
+<td>0.064863</td>
+<td>['Cu', 'Ni']</td>
+<td># generated using pymatgen\ndata_CuNi\n_symmet...</td>
+<td>65</td>
+<td>65</td>
+<td># generated using pymatgen\ndata_CuNi\n_symmet...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>3</td>
+<td>780</td>
+<td>mp-1220884</td>
+<td>-1.456116</td>
+<td>0.0000</td>
+<td>NaTiVS4</td>
+<td>0.000000</td>
+<td>['Na', 'S', 'Ti', 'V']</td>
+<td># generated using pymatgen\ndata_NaTiVS4\n_sym...</td>
+<td>8</td>
+<td>8</td>
+<td># generated using pymatgen\ndata_NaTiVS4\n_sym...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>4</td>
+<td>35749</td>
+<td>mp-1224266</td>
+<td>0.024139</td>
+<td>0.0000</td>
+<td>Ho3TmMn8</td>
+<td>0.036496</td>
+<td>['Ho', 'Mn', 'Tm']</td>
+<td># generated using pymatgen\ndata_Ho3TmMn8\n_sy...</td>
+<td>8</td>
+<td>8</td>
+<td># generated using pymatgen\ndata_Ho3TmMn8\n_sy...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">9041</td>
+<td>9041</td>
+<td>7763</td>
+<td>mp-21084</td>
+<td>-1.777752</td>
+<td>1.0134</td>
+<td>In6Ga2PtO8</td>
+<td>0.000000</td>
+<td>['Ga', 'In', 'O', 'Pt']</td>
+<td># generated using pymatgen\ndata_In6Ga2PtO8\n_...</td>
+<td>225</td>
+<td>225</td>
+<td># generated using pymatgen\ndata_In6Ga2PtO8\n_...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9042</td>
+<td>9042</td>
+<td>15377</td>
+<td>mp-571486</td>
+<td>-0.359373</td>
+<td>0.0000</td>
+<td>CuSe</td>
+<td>0.000000</td>
+<td>['Cu', 'Se']</td>
+<td># generated using pymatgen\ndata_CuSe\n_symmet...</td>
+<td>63</td>
+<td>63</td>
+<td># generated using pymatgen\ndata_CuSe\n_symmet...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">9043</td>
+<td>9043</td>
+<td>17730</td>
+<td>mp-14410</td>
+<td>-1.205080</td>
+<td>0.4594</td>
+<td>Tl6TeO12</td>
+<td>0.000000</td>
+<td>['O', 'Te', 'Tl']</td>
+<td># generated using pymatgen\ndata_Tl6TeO12\n_sy...</td>
+<td>148</td>
+<td>148</td>
+<td># generated using pymatgen\ndata_Tl6TeO12\n_sy...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9044</td>
+<td>9044</td>
+<td>28030</td>
+<td>mp-1079192</td>
+<td>-2.814520</td>
+<td>0.0000</td>
+<td>Sr2GdRuO6</td>
+<td>0.014361</td>
+<td>['Gd', 'O', 'Ru', 'Sr']</td>
+<td># generated using pymatgen\ndata_Sr2GdRuO6\n_s...</td>
+<td>87</td>
+<td>87</td>
+<td># generated using pymatgen\ndata_Sr2GdRuO6\n_s...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">9045</td>
+<td>9045</td>
+<td>15725</td>
+<td>mp-13501</td>
+<td>-0.359000</td>
+<td>0.0000</td>
+<td>ErCoC2</td>
+<td>0.000000</td>
+<td>['Er', 'Co', 'C']</td>
+<td># generated using pymatgen\ndata_ErCoC2\n_symm...</td>
+<td>38</td>
+<td>38</td>
+<td># generated using pymatgen\ndata_ErCoC2\n_symm...</td>
+</tr>
+</tbody>
+</table>
+
+<p>9046 rows × 12 columns</p>
+</div>
+</div>
+</div>
+</div>
+<div id="cell-13" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install scikit<span class="op">-</span>learn</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Defaulting to user installation because normal site-packages is not writeable
+Collecting scikit-learn
+  Using cached scikit_learn-1.4.2-cp311-cp311-macosx_12_0_arm64.whl.metadata (11 kB)
+Requirement already satisfied: numpy&gt;=1.19.5 in /Users/dmitriynielsen/Library/Python/3.11/lib/python/site-packages (from scikit-learn) (1.26.4)
+Requirement already satisfied: scipy&gt;=1.6.0 in /Users/dmitriynielsen/Library/Python/3.11/lib/python/site-packages (from scikit-learn) (1.13.0)
+Requirement already satisfied: joblib&gt;=1.2.0 in /Users/dmitriynielsen/Library/Python/3.11/lib/python/site-packages (from scikit-learn) (1.4.2)
+Collecting threadpoolctl&gt;=2.0.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Using cached scikit_learn-1.4.2-cp311-cp311-macosx_12_0_arm64.whl (10.5 MB)
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Installing collected packages: threadpoolctl, scikit-learn
+Successfully installed scikit-learn-1.4.2 threadpoolctl-3.5.0
+Note: you may need to restart the kernel to use updated packages.</code></pre>
+</div>
+</div>
+<div id="cell-14" class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pymatgen.core <span class="im">import</span> Structure</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_cif_files(directory):</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> []</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    index <span class="op">=</span> <span class="dv">0</span>  <span class="co"># to simulate 'Unnamed: 0.1' and 'Unnamed: 0'</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> filename <span class="kw">in</span> os.listdir(directory):</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> filename.endswith(<span class="st">".cif"</span>):</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>            filepath <span class="op">=</span> os.path.join(directory, filename)</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>            <span class="cf">try</span>:</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>                structure <span class="op">=</span> Structure.from_file(filepath)</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>                formula <span class="op">=</span> structure.formula</span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Generating pseudo thermal properties and bandgap values</span></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>                <span class="co"># These should be replaced with actual calculated or sourced values</span></span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>                heat_all <span class="op">=</span> <span class="fl">1.0</span>  <span class="co"># Placeholder</span></span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>                heat_ref <span class="op">=</span> <span class="fl">1.0</span>  <span class="co"># Placeholder</span></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>                dir_gap <span class="op">=</span> <span class="fl">0.0</span>  <span class="co"># Placeholder</span></span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>                ind_gap <span class="op">=</span> <span class="fl">0.0</span>  <span class="co"># Placeholder</span></span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>                space_group_info <span class="op">=</span> structure.get_space_group_info()</span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>                data.append({</span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"Unnamed: 0.1"</span>: index,</span>
+<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"Unnamed: 0"</span>: index,</span>
+<span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"material_id"</span>: index <span class="op">+</span> <span class="dv">1000</span>,  <span class="co"># Simulated material_id</span></span>
+<span id="cb16-27"><a href="#cb16-27" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"cif"</span>: <span class="ss">f"# generated using pymatgen</span><span class="ch">\n</span><span class="ss">data_</span><span class="sc">{</span>formula<span class="sc">}</span><span class="ch">\n</span><span class="ss">_symmetry...</span><span class="ch">\n</span><span class="ss">more CIF data"</span>,</span>
+<span id="cb16-28"><a href="#cb16-28" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"formula"</span>: formula,</span>
+<span id="cb16-29"><a href="#cb16-29" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"heat_all"</span>: heat_all,</span>
+<span id="cb16-30"><a href="#cb16-30" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"heat_ref"</span>: heat_ref,</span>
+<span id="cb16-31"><a href="#cb16-31" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"dir_gap"</span>: dir_gap,</span>
+<span id="cb16-32"><a href="#cb16-32" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"ind_gap"</span>: ind_gap,</span>
+<span id="cb16-33"><a href="#cb16-33" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"spacegroup.number"</span>: space_group_info[<span class="dv">1</span>],</span>
+<span id="cb16-34"><a href="#cb16-34" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"spacegroup.number.conv"</span>: space_group_info[<span class="dv">1</span>],</span>
+<span id="cb16-35"><a href="#cb16-35" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"cif.conv"</span>: <span class="ss">f"# generated using pymatgen</span><span class="ch">\n</span><span class="ss">data_</span><span class="sc">{</span>formula<span class="sc">}</span><span class="ch">\n</span><span class="ss">_symmetry...</span><span class="ch">\n</span><span class="ss">more CIF data"</span></span>
+<span id="cb16-36"><a href="#cb16-36" aria-hidden="true" tabindex="-1"></a>                })</span>
+<span id="cb16-37"><a href="#cb16-37" aria-hidden="true" tabindex="-1"></a>                index <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb16-38"><a href="#cb16-38" aria-hidden="true" tabindex="-1"></a>            <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb16-39"><a href="#cb16-39" aria-hidden="true" tabindex="-1"></a>                <span class="bu">print</span>(<span class="ss">f"Failed to process </span><span class="sc">{</span>filename<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb16-40"><a href="#cb16-40" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb16-41"><a href="#cb16-41" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.DataFrame(data)</span>
+<span id="cb16-42"><a href="#cb16-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df</span>
+<span id="cb16-43"><a href="#cb16-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-44"><a href="#cb16-44" aria-hidden="true" tabindex="-1"></a>dir_path <span class="op">=</span> <span class="st">'/Users/dmitriynielsen/GitHub/DiffCSP/CHILI-3K_CIFs'</span></span>
+<span id="cb16-45"><a href="#cb16-45" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> process_cif_files(dir_path)</span>
+<span id="cb16-46"><a href="#cb16-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-47"><a href="#cb16-47" aria-hidden="true" tabindex="-1"></a><span class="co"># Splitting the DataFrame into train, test, and val sets</span></span>
+<span id="cb16-48"><a href="#cb16-48" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb16-49"><a href="#cb16-49" aria-hidden="true" tabindex="-1"></a>train_df, temp_df <span class="op">=</span> train_test_split(df, test_size<span class="op">=</span><span class="fl">0.4</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb16-50"><a href="#cb16-50" aria-hidden="true" tabindex="-1"></a>test_df, val_df <span class="op">=</span> train_test_split(temp_df, test_size<span class="op">=</span><span class="fl">0.5</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb16-51"><a href="#cb16-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-52"><a href="#cb16-52" aria-hidden="true" tabindex="-1"></a>train_df.to_csv(<span class="st">'/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/data/test_dat/train.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb16-53"><a href="#cb16-53" aria-hidden="true" tabindex="-1"></a>test_df.to_csv(<span class="st">'/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/data/test_dat/test.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb16-54"><a href="#cb16-54" aria-hidden="true" tabindex="-1"></a>val_df.to_csv(<span class="st">'/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/data/test_dat/val.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/Users/dmitriynielsen/Library/Python/3.11/lib/python/site-packages/pymatgen/io/cif.py:1225: UserWarning: Issues encountered while parsing CIF: 4 fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/Users/dmitriynielsen/Library/Python/3.11/lib/python/site-packages/pymatgen/io/cif.py:1225: UserWarning: Issues encountered while parsing CIF: 8 fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/Users/dmitriynielsen/Library/Python/3.11/lib/python/site-packages/pymatgen/io/cif.py:1225: UserWarning: Issues encountered while parsing CIF: 14 fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))</code></pre>
+</div>
+</div>
+<div id="cell-15" class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install pymatgen</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-16" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pymatgen.core <span class="im">import</span> Structure</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>structure <span class="op">=</span> Structure.from_file(<span class="st">'/Users/dmitriynielsen/GitHub/DiffCSP/CHILI-3K_CIFs/'</span>)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>formula <span class="op">=</span> structure.formula</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/Users/dmitriynielsen/Library/Python/3.11/lib/python/site-packages/pymatgen/io/cif.py:1225: UserWarning: Issues encountered while parsing CIF: 14 fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))</code></pre>
+</div>
+</div>
+<div id="cell-17" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>formula</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="13">
+<pre><code>'B3 O6'</code></pre>
+</div>
+</div>
+<div id="cell-18" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> df1.rename(columns<span class="op">=</span>{<span class="st">"content"</span>: <span class="st">"cif"</span>})</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>df1.to_csv(<span class="st">'original_file_path.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">"cif"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<pre><code>0     data_image0\n_chemical_formula_structural     ...
+1     data_image0\n_chemical_formula_structural     ...
+2     data_image0\n_chemical_formula_structural     ...
+3     data_image0\n_chemical_formula_structural     ...
+4     data_image0\n_chemical_formula_structural     ...
+                            ...                        
+92    data_image0\n_chemical_formula_structural     ...
+93    data_image0\n_chemical_formula_structural     ...
+94    data_image0\n_chemical_formula_structural     ...
+95    data_image0\n_chemical_formula_structural     ...
+96    data_image0\n_chemical_formula_structural     ...
+Name: cif, Length: 97, dtype: object</code></pre>
+</div>
+</div>
+<div id="cell-19" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> Bio.PDB.MMCIF2Dict <span class="im">import</span> MMCIF2Dict</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>dico <span class="op">=</span> MMCIF2Dict(<span class="vs">r"/Users/dmitriynielsen/Downloads/CHILI-3K_CIFs/AntiFluorite_Ag2O.cif"</span>)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame.from_dict(dico, orient<span class="op">=</span><span class="st">'index'</span>)</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.transpose()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-20" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="15">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">data_</th>
+<th data-quarto-table-cell-role="th">_chemical_formula_structural</th>
+<th data-quarto-table-cell-role="th">_chemical_formula_sum</th>
+<th data-quarto-table-cell-role="th">_cell_length_a</th>
+<th data-quarto-table-cell-role="th">_cell_length_b</th>
+<th data-quarto-table-cell-role="th">_cell_length_c</th>
+<th data-quarto-table-cell-role="th">_cell_angle_alpha</th>
+<th data-quarto-table-cell-role="th">_cell_angle_beta</th>
+<th data-quarto-table-cell-role="th">_cell_angle_gamma</th>
+<th data-quarto-table-cell-role="th">_space_group_name_H-M_alt</th>
+<th data-quarto-table-cell-role="th">_space_group_IT_number</th>
+<th data-quarto-table-cell-role="th">_space_group_symop_operation_xyz</th>
+<th data-quarto-table-cell-role="th">_atom_site_type_symbol</th>
+<th data-quarto-table-cell-role="th">_atom_site_label</th>
+<th data-quarto-table-cell-role="th">_atom_site_symmetry_multiplicity</th>
+<th data-quarto-table-cell-role="th">_atom_site_fract_x</th>
+<th data-quarto-table-cell-role="th">_atom_site_fract_y</th>
+<th data-quarto-table-cell-role="th">_atom_site_fract_z</th>
+<th data-quarto-table-cell-role="th">_atom_site_occupancy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>image0</td>
+<td>[Ag8O4]</td>
+<td>[Ag8 O4]</td>
+<td>[5.2878]</td>
+<td>[5.2878]</td>
+<td>[5.2878]</td>
+<td>[90]</td>
+<td>[90]</td>
+<td>[90]</td>
+<td>[P 1]</td>
+<td>[1]</td>
+<td>[x, y, z]</td>
+<td>[Ag, Ag, Ag, Ag, Ag, Ag, Ag, Ag, O, O, O, O]</td>
+<td>[Ag1, Ag2, Ag3, Ag4, Ag5, Ag6, Ag7, Ag8, O1, O...</td>
+<td>[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, ...</td>
+<td>[0.25000, 0.75000, 0.75000, 0.25000, 0.25000, ...</td>
+<td>[0.25000, 0.75000, 0.25000, 0.75000, 0.25000, ...</td>
+<td>[0.25000, 0.25000, 0.75000, 0.75000, 0.75000, ...</td>
+<td>[1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.000...</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+<div id="cell-21" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>sys.path.append(<span class="st">'/Users/dmitriynielsen/GitHub/DiffCSP/New_try02'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-22" class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> runpy</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Set sys.argv to mimic command line arguments</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>sys.argv <span class="op">=</span> [<span class="st">'/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/run.py'</span>, <span class="st">'arg1'</span>, <span class="st">'arg2'</span>]</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the script</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="co">#runpy.run_path('/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/run.py')</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="testing-with-markdown" class="level1">
+<h1>Testing with markdown</h1>
+<div id="cell-24" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>run</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="13">
+<pre><code>&lt;function DiffCSP.diffcsp.run.run(cfg: omegaconf.dictconfig.DictConfig) -&gt; None&gt;</code></pre>
+</div>
+</div>
+<div id="cell-25" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>os.environ[<span class="st">'PROJECT_ROOT'</span>] <span class="op">=</span> <span class="st">"/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP"</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>os.environ[<span class="st">'HYDRA_JOBS'</span>] <span class="op">=</span> <span class="st">"/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/hydra"</span> </span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>os.environ[<span class="st">'WANDB_DIR'</span>] <span class="op">=</span> <span class="st">"/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/wandb"</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> omegaconf <span class="im">import</span> OmegaConf</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>sys.path.append(os.environ[<span class="st">'PROJECT_ROOT'</span>])</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Rest of your code</span></span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> typing <span class="im">import</span> List</span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
+<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a>sys.path.append(<span class="st">'.'</span>)</span>
+<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> hydra</span>
+<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> omegaconf</span>
+<span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pytorch_lightning <span class="im">as</span> pl</span>
+<span id="cb31-24"><a href="#cb31-24" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> hydra.core.hydra_config <span class="im">import</span> HydraConfig</span>
+<span id="cb31-25"><a href="#cb31-25" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> omegaconf <span class="im">import</span> DictConfig, OmegaConf</span>
+<span id="cb31-26"><a href="#cb31-26" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pytorch_lightning <span class="im">import</span> seed_everything, Callback</span>
+<span id="cb31-27"><a href="#cb31-27" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pytorch_lightning.callbacks <span class="im">import</span> (</span>
+<span id="cb31-28"><a href="#cb31-28" aria-hidden="true" tabindex="-1"></a>    EarlyStopping,</span>
+<span id="cb31-29"><a href="#cb31-29" aria-hidden="true" tabindex="-1"></a>    LearningRateMonitor,</span>
+<span id="cb31-30"><a href="#cb31-30" aria-hidden="true" tabindex="-1"></a>    ModelCheckpoint,</span>
+<span id="cb31-31"><a href="#cb31-31" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb31-32"><a href="#cb31-32" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pytorch_lightning.loggers <span class="im">import</span> WandbLogger</span>
+<span id="cb31-33"><a href="#cb31-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-34"><a href="#cb31-34" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> DiffCSP.diffcsp.common.utils <span class="im">import</span> log_hyperparameters, PROJECT_ROOT</span>
+<span id="cb31-35"><a href="#cb31-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-36"><a href="#cb31-36" aria-hidden="true" tabindex="-1"></a><span class="co"># import DiffCSP</span></span>
+<span id="cb31-37"><a href="#cb31-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-38"><a href="#cb31-38" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wandb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-26" class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>HydraConfig</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="25">
+<pre><code>hydra.core.hydra_config.HydraConfig</code></pre>
+</div>
+</div>
+<div id="cell-27" class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> run(cfg: DictConfig) <span class="op">-&gt;</span> <span class="va">None</span>:</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    hydra_dir <span class="op">=</span> Path(HydraConfig.get())</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-28" class="cell" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>run(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>ValueError: HydraConfig was not set</code></pre>
+</div>
+</div>
+<div id="cell-29" class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="at">@hydra.main</span>(config_path<span class="op">=</span><span class="bu">str</span>(PROJECT_ROOT <span class="op">/</span> <span class="st">"conf"</span>), config_name<span class="op">=</span><span class="st">"default"</span>)</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> my_app(cfg: omegaconf.DictConfig):</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>    run(cfg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/var/folders/w3/z31f4pdj3qn9q2y1k6c3ww700000gn/T/ipykernel_71424/1958395679.py:1: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  @hydra.main(config_path=str(PROJECT_ROOT / "conf"), config_name="default")</code></pre>
+</div>
+</div>
+<div id="cell-30" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load this tensor from /Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/prop_models/perov_gen/eval_diff.pt</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Path to the .pt file</span></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">"/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/prop_models/perov_gen/eval_diff.pt"</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the tensor</span></span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>tensor <span class="op">=</span> torch.load(file_path)</span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the tensor</span></span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tensor)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'eval_setting': Namespace(model_path='/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/prop_models/perov_gen', dataset='perov_5', step_lr=-1, num_evals=1, label=''), 'input_data_batch': DataBatch(edge_index=[2, 8088], y=[256, 1], frac_coords=[1280, 3], atom_types=[1280], lengths=[256, 3], angles=[256, 3], to_jimages=[8088, 3], num_atoms=[256], num_bonds=[256], num_nodes=1280, batch=[1280], ptr=[257]), 'frac_coords': tensor([[[0.7583, 0.6388, 0.9255],
+         [0.2585, 0.6387, 0.4218],
+         [0.7577, 0.6386, 0.4260],
+         ...,
+         [0.7184, 0.3231, 0.4108],
+         [0.2183, 0.3237, 0.4048],
+         [0.2183, 0.8233, 0.4114]]]), 'num_atoms': tensor([[5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]]), 'atom_types': tensor([[[ 2.0657e-04, -3.2246e-04,  6.1634e-04,  ...,  3.9575e-04,
+          -2.2115e-05, -6.7736e-04],
+         [ 3.5176e-05, -2.4378e-04,  1.0252e-04,  ..., -1.3990e-04,
+           1.8666e-04, -3.4751e-04],
+         [ 1.6069e-03, -7.5637e-04,  1.9725e-03,  ...,  1.5788e-04,
+          -5.8630e-04, -4.7797e-04],
+         ...,
+         [ 5.6031e-04,  9.8038e-04,  2.9141e-04,  ...,  1.0953e-03,
+           1.1578e-04, -1.1041e-03],
+         [ 1.1122e-05, -3.2813e-07, -4.5089e-04,  ...,  7.6639e-04,
+           4.6322e-04, -3.5063e-04],
+         [ 8.2700e-04,  7.9905e-05,  7.5388e-04,  ...,  7.8706e-04,
+           5.0825e-05, -5.2620e-04]]]), 'lattices': tensor([[[[ 3.1828, -1.6598, -2.6396],
+          [ 2.1359,  3.8961,  0.1339],
+          [-2.2641,  1.3639, -3.5809]],
+
+         [[-3.5509, -1.9210, -1.0358],
+          [-1.6426,  3.6475, -1.1237],
+          [ 1.4327, -0.5477, -3.8736]],
+
+         [[-0.4158,  0.9757, -4.0999],
+          [-2.3416,  3.3639,  1.0382],
+          [-3.4992, -2.3751, -0.2058]],
+
+         ...,
+
+         [[ 0.8737,  2.9560,  3.0170],
+          [ 3.8490, -1.8215,  0.6696],
+          [-1.7358, -2.5637,  3.0068]],
+
+         [[-1.7242, -0.2005, -3.8009],
+          [-2.8173,  2.8605,  1.1279],
+          [-2.5490, -3.0371,  1.3236]],
+
+         [[ 1.9803,  0.9662,  3.4285],
+          [-3.5039, -0.1563,  2.0659],
+          [-0.6227,  3.9564, -0.7632]]]]), 'lengths': tensor([[[4.4556, 4.4452, 4.4508],
+         [4.1679, 4.1551, 4.1662],
+         [4.2349, 4.2281, 4.2341],
+         [4.2930, 4.2880, 4.2952],
+         [4.5274, 4.5231, 4.5307],
+         [3.9431, 3.9371, 3.9419],
+         [4.1302, 4.1223, 4.1325],
+         [4.0001, 4.0040, 4.0139],
+         [4.1517, 4.1388, 4.1478],
+         [4.4648, 4.4615, 4.4672],
+         [4.3079, 4.2991, 4.3096],
+         [4.9719, 4.9580, 4.9635],
+         [3.8812, 3.8753, 3.8762],
+         [4.3488, 4.3472, 4.3545],
+         [4.0917, 4.0873, 4.0922],
+         [3.5542, 3.5528, 3.5617],
+         [4.1942, 4.1802, 4.1926],
+         [3.9352, 3.9276, 3.9355],
+         [4.3747, 4.3699, 4.3752],
+         [3.7073, 3.7044, 3.7122],
+         [3.9036, 3.8946, 3.9033],
+         [4.5377, 4.5278, 4.5348],
+         [3.9620, 3.9627, 3.9695],
+         [3.8575, 3.8560, 3.8629],
+         [3.7909, 3.7815, 3.7878],
+         [4.1056, 4.1031, 4.1108],
+         [4.1192, 4.1173, 4.1204],
+         [3.9389, 3.9292, 3.9374],
+         [3.8208, 3.8158, 3.8253],
+         [4.2401, 4.2346, 4.2430],
+         [3.8232, 3.8142, 3.8221],
+         [4.5050, 4.4980, 4.5007],
+         [4.5812, 4.5719, 4.5794],
+         [4.1527, 4.1415, 4.1445],
+         [3.6603, 3.6560, 3.6612],
+         [3.9104, 3.9079, 3.9152],
+         [3.7563, 3.7515, 3.7577],
+         [4.2220, 4.2212, 4.2229],
+         [3.5609, 3.5545, 3.5602],
+         [4.3184, 4.3137, 4.3196],
+         [4.0574, 4.0595, 4.0669],
+         [3.8375, 3.8401, 3.8448],
+         [4.0662, 4.0590, 4.0633],
+         [4.2506, 4.2401, 4.2452],
+         [4.0192, 4.0087, 4.0172],
+         [3.9161, 3.9082, 3.9149],
+         [4.0661, 4.0552, 4.0601],
+         [3.7050, 3.7041, 3.7145],
+         [3.8104, 3.8063, 3.8146],
+         [4.2134, 4.2034, 4.2098],
+         [3.5667, 3.5558, 3.5631],
+         [4.7968, 4.7911, 4.7977],
+         [4.4433, 4.4365, 4.4440],
+         [4.4552, 4.4458, 4.4519],
+         [4.0858, 4.0726, 4.0792],
+         [3.4045, 3.3962, 3.3997],
+         [3.7727, 3.7659, 3.7694],
+         [3.8662, 3.8666, 3.8736],
+         [3.5456, 3.5391, 3.5481],
+         [4.0132, 4.0045, 4.0116],
+         [4.0030, 3.9956, 4.0004],
+         [4.2111, 4.2013, 4.2125],
+         [4.0610, 4.0597, 4.0649],
+         [4.7044, 4.6934, 4.7006],
+         [3.9642, 3.9582, 3.9637],
+         [3.8495, 3.8465, 3.8503],
+         [3.7063, 3.6968, 3.7039],
+         [3.8378, 3.8391, 3.8505],
+         [4.4455, 4.4379, 4.4426],
+         [4.2261, 4.2194, 4.2253],
+         [3.5963, 3.5972, 3.6039],
+         [4.5451, 4.5383, 4.5403],
+         [4.0262, 4.0186, 4.0233],
+         [4.7354, 4.7229, 4.7281],
+         [4.2083, 4.1976, 4.2030],
+         [4.1471, 4.1373, 4.1435],
+         [5.0116, 5.0076, 5.0142],
+         [3.9157, 3.9104, 3.9168],
+         [4.2244, 4.2144, 4.2259],
+         [4.3948, 4.3863, 4.3902],
+         [4.1957, 4.1927, 4.1967],
+         [4.4679, 4.4654, 4.4705],
+         [4.0161, 4.0176, 4.0221],
+         [4.4583, 4.4481, 4.4523],
+         [4.1551, 4.1490, 4.1589],
+         [4.0417, 4.0383, 4.0451],
+         [3.7281, 3.7200, 3.7231],
+         [4.0113, 4.0010, 4.0120],
+         [3.4787, 3.4729, 3.4794],
+         [3.7588, 3.7528, 3.7594],
+         [3.8786, 3.8713, 3.8765],
+         [4.3392, 4.3354, 4.3400],
+         [4.0089, 4.0048, 4.0086],
+         [4.4959, 4.4909, 4.4954],
+         [4.5639, 4.5557, 4.5580],
+         [4.1435, 4.1342, 4.1410],
+         [4.0660, 4.0597, 4.0643],
+         [3.8361, 3.8298, 3.8393],
+         [3.5659, 3.5610, 3.5667],
+         [4.0333, 4.0251, 4.0347],
+         [4.0603, 4.0477, 4.0556],
+         [3.9372, 3.9306, 3.9349],
+         [3.9502, 3.9502, 3.9564],
+         [4.1768, 4.1721, 4.1801],
+         [4.0951, 4.0906, 4.1020],
+         [4.1930, 4.1807, 4.1904],
+         [4.0399, 4.0402, 4.0447],
+         [3.9391, 3.9363, 3.9403],
+         [4.3738, 4.3655, 4.3697],
+         [3.9827, 3.9780, 3.9826],
+         [3.5945, 3.5869, 3.5873],
+         [3.4778, 3.4708, 3.4830],
+         [4.0360, 4.0313, 4.0363],
+         [3.9524, 3.9425, 3.9482],
+         [3.9207, 3.9085, 3.9152],
+         [4.2648, 4.2568, 4.2626],
+         [3.8295, 3.8206, 3.8257],
+         [4.0220, 4.0169, 4.0236],
+         [3.8953, 3.8976, 3.9041],
+         [4.0964, 4.0896, 4.0934],
+         [3.9232, 3.9189, 3.9245],
+         [4.0390, 4.0390, 4.0416],
+         [3.9535, 3.9480, 3.9527],
+         [4.3683, 4.3616, 4.3685],
+         [3.8108, 3.8013, 3.8094],
+         [4.2773, 4.2725, 4.2733],
+         [3.5932, 3.5868, 3.5908],
+         [4.1315, 4.1204, 4.1274],
+         [3.7450, 3.7385, 3.7447],
+         [4.4333, 4.4260, 4.4374],
+         [4.0012, 3.9996, 4.0063],
+         [4.1377, 4.1291, 4.1377],
+         [4.1013, 4.0957, 4.1027],
+         [4.1693, 4.1571, 4.1662],
+         [3.5954, 3.5942, 3.6026],
+         [4.2705, 4.2593, 4.2636],
+         [3.9076, 3.8958, 3.9090],
+         [4.5118, 4.5030, 4.5101],
+         [3.7996, 3.7972, 3.8076],
+         [4.3627, 4.3572, 4.3629],
+         [4.4277, 4.4164, 4.4214],
+         [4.2849, 4.2834, 4.2881],
+         [4.0565, 4.0524, 4.0592],
+         [4.0666, 4.0540, 4.0597],
+         [4.2766, 4.2697, 4.2776],
+         [3.9759, 3.9680, 3.9798],
+         [4.1080, 4.1059, 4.1145],
+         [4.2364, 4.2285, 4.2304],
+         [3.7959, 3.7863, 3.7973],
+         [3.9172, 3.9078, 3.9182],
+         [3.7788, 3.7820, 3.7953],
+         [4.1109, 4.0996, 4.1066],
+         [4.3411, 4.3406, 4.3486],
+         [4.4594, 4.4437, 4.4567],
+         [4.2178, 4.2133, 4.2141],
+         [3.6772, 3.6659, 3.6714],
+         [3.5971, 3.5943, 3.6008],
+         [4.0827, 4.0773, 4.0873],
+         [3.8019, 3.7979, 3.8055],
+         [3.9047, 3.8919, 3.8970],
+         [4.0641, 4.0594, 4.0637],
+         [3.5669, 3.5753, 3.5853],
+         [4.6940, 4.6902, 4.6922],
+         [3.7296, 3.7290, 3.7352],
+         [4.4440, 4.4406, 4.4418],
+         [4.0291, 4.0227, 4.0288],
+         [4.4383, 4.4294, 4.4344],
+         [4.1171, 4.1066, 4.1160],
+         [4.3516, 4.3495, 4.3573],
+         [4.0842, 4.0765, 4.0818],
+         [4.2258, 4.2165, 4.2195],
+         [3.8507, 3.8416, 3.8469],
+         [4.6518, 4.6475, 4.6523],
+         [4.2504, 4.2445, 4.2506],
+         [4.2556, 4.2449, 4.2510],
+         [4.2605, 4.2514, 4.2594],
+         [4.0288, 4.0303, 4.0332],
+         [4.5333, 4.5219, 4.5262],
+         [3.8119, 3.8101, 3.8219],
+         [4.9229, 4.9161, 4.9214],
+         [4.2249, 4.2188, 4.2296],
+         [3.6996, 3.6906, 3.6952],
+         [4.1084, 4.1083, 4.1134],
+         [4.0491, 4.0475, 4.0506],
+         [4.4076, 4.4021, 4.4057],
+         [4.5754, 4.5732, 4.5765],
+         [3.9412, 3.9348, 3.9408],
+         [4.5833, 4.5800, 4.5839],
+         [4.3361, 4.3293, 4.3358],
+         [4.0497, 4.0429, 4.0478],
+         [4.1803, 4.1720, 4.1796],
+         [4.2220, 4.2146, 4.2241],
+         [4.2769, 4.2715, 4.2744],
+         [4.7468, 4.7452, 4.7478],
+         [3.8927, 3.8802, 3.8855],
+         [3.9763, 3.9702, 3.9781],
+         [3.9433, 3.9389, 3.9449],
+         [4.2899, 4.2825, 4.2897],
+         [4.1940, 4.1922, 4.1971],
+         [3.7432, 3.7427, 3.7534],
+         [4.1266, 4.1160, 4.1213],
+         [4.6610, 4.6572, 4.6648],
+         [4.5943, 4.5867, 4.5912],
+         [3.8899, 3.8823, 3.8842],
+         [4.5991, 4.5902, 4.5968],
+         [4.0503, 4.0509, 4.0622],
+         [4.5315, 4.5223, 4.5321],
+         [4.2153, 4.2128, 4.2173],
+         [3.8859, 3.8770, 3.8806],
+         [3.9416, 3.9388, 3.9478],
+         [4.3644, 4.3569, 4.3612],
+         [3.8148, 3.8099, 3.8147],
+         [4.5734, 4.5687, 4.5769],
+         [3.7303, 3.7239, 3.7292],
+         [3.6554, 3.6630, 3.6666],
+         [4.1741, 4.1705, 4.1775],
+         [4.2100, 4.2022, 4.2077],
+         [4.3874, 4.3770, 4.3823],
+         [3.6963, 3.6912, 3.7010],
+         [4.5013, 4.4930, 4.4954],
+         [3.8266, 3.8213, 3.8277],
+         [3.9436, 3.9382, 3.9414],
+         [4.6591, 4.6548, 4.6612],
+         [3.9343, 3.9206, 3.9236],
+         [3.9153, 3.9123, 3.9191],
+         [4.0368, 4.0312, 4.0361],
+         [4.4850, 4.4760, 4.4813],
+         [4.2016, 4.2017, 4.2126],
+         [3.6944, 3.6917, 3.6981],
+         [4.3215, 4.3107, 4.3189],
+         [4.0295, 4.0264, 4.0345],
+         [4.3337, 4.3288, 4.3357],
+         [4.9620, 4.9567, 4.9594],
+         [3.6124, 3.6127, 3.6197],
+         [3.8410, 3.8350, 3.8416],
+         [4.3089, 4.3056, 4.3115],
+         [4.2059, 4.1990, 4.2031],
+         [4.1684, 4.1623, 4.1651],
+         [3.8536, 3.8574, 3.8638],
+         [4.3699, 4.3573, 4.3638],
+         [4.0118, 4.0062, 4.0121],
+         [3.8934, 3.8936, 3.8963],
+         [3.8920, 3.8802, 3.8901],
+         [4.2461, 4.2405, 4.2495],
+         [3.7417, 3.7357, 3.7428],
+         [4.3452, 4.3412, 4.3480],
+         [4.1769, 4.1670, 4.1724],
+         [3.6124, 3.6185, 3.6253],
+         [3.9915, 3.9908, 3.9956],
+         [3.9484, 3.9373, 3.9437],
+         [4.5917, 4.5807, 4.5901],
+         [4.0118, 4.0071, 4.0082],
+         [3.9456, 3.9430, 3.9457],
+         [4.3132, 4.3106, 4.3158],
+         [4.1785, 4.1703, 4.1801],
+         [4.0755, 4.0706, 4.0772]]]), 'angles': tensor([[[90.0044, 90.0521, 90.0631],
+         [89.9945, 90.0761, 90.0345],
+         [90.0306, 90.0587, 90.0030],
+         [90.0261, 90.0777, 90.0584],
+         [90.0181, 90.0400, 90.0394],
+         [90.0365, 90.0799, 90.0001],
+         [90.0247, 90.0959, 90.0159],
+         [89.9959, 90.0975, 89.9933],
+         [90.0197, 90.0450, 90.0369],
+         [89.9922, 90.0764, 90.0556],
+         [90.0091, 90.0701, 90.0193],
+         [90.0225, 90.0290, 90.0540],
+         [89.9805, 90.0710, 90.0564],
+         [89.9808, 90.0621, 90.0160],
+         [90.0167, 90.0743, 89.9952],
+         [90.0424, 90.1066, 89.9913],
+         [90.0022, 90.0592, 89.9897],
+         [90.0367, 90.0391, 90.0431],
+         [90.0036, 90.0422, 90.0274],
+         [90.0662, 90.1050, 89.9622],
+         [90.0111, 90.0981, 89.9739],
+         [90.0424, 90.0545, 89.9847],
+         [90.0602, 90.1188, 89.9387],
+         [90.0329, 90.0913, 89.9819],
+         [90.0558, 90.0797, 90.0023],
+         [90.0211, 90.0914, 89.9680],
+         [90.0212, 90.0376, 90.0294],
+         [90.0362, 90.0815, 90.0251],
+         [90.0117, 90.1101, 90.0582],
+         [90.0436, 90.0634, 90.0177],
+         [90.0156, 90.0565, 90.0176],
+         [90.0295, 90.0514, 90.0197],
+         [89.9953, 90.0178, 89.9911],
+         [90.0198, 90.0508, 90.0016],
+         [90.0297, 90.1000, 90.0059],
+         [89.9814, 90.0606, 89.9963],
+         [90.0586, 90.0612, 90.0099],
+         [90.0287, 90.1069, 90.0368],
+         [90.0773, 90.0848, 90.0071],
+         [90.0120, 90.0688, 90.0141],
+         [90.0360, 90.0854, 90.0057],
+         [90.0124, 90.1244, 89.9860],
+         [90.0313, 90.0654, 89.9998],
+         [90.0260, 90.0482, 90.0095],
+         [90.0271, 90.0588, 90.0128],
+         [90.0633, 90.0707, 90.0233],
+         [89.9952, 90.0816, 90.0299],
+         [89.9646, 90.0784, 89.9925],
+         [90.0518, 90.1115, 90.0124],
+         [89.9807, 90.0537, 90.0194],
+         [90.0466, 90.1199, 89.9908],
+         [89.9792, 90.0216, 89.9806],
+         [90.0419, 90.0622, 89.9932],
+         [90.0225, 90.0652, 90.0489],
+         [90.0586, 90.0404, 90.0003],
+         [90.0449, 90.1202, 90.0387],
+         [90.0298, 90.1107, 90.0344],
+         [90.0285, 90.0986, 89.9952],
+         [90.0232, 90.0716, 90.0009],
+         [89.9906, 90.0722, 90.0598],
+         [90.0101, 90.0854, 89.9937],
+         [89.9992, 90.0724, 90.0563],
+         [90.0070, 90.0661, 90.0084],
+         [90.0180, 90.0538, 90.0248],
+         [89.9998, 90.0238, 89.9848],
+         [90.0012, 90.0639, 90.0105],
+         [90.0454, 90.0753, 90.0538],
+         [90.0296, 90.1143, 89.9882],
+         [90.0207, 90.0391, 90.0384],
+         [90.0193, 90.0544, 90.0337],
+         [90.0872, 90.0944, 90.0358],
+         [90.0141, 90.0435, 90.0422],
+         [90.0078, 90.0683, 89.9785],
+         [89.9955, 90.0490, 90.0026],
+         [90.0386, 90.0317, 90.0440],
+         [90.0255, 90.0632, 90.0286],
+         [89.9955, 90.0105, 90.0199],
+         [90.0143, 90.0818, 90.0082],
+         [90.0124, 90.0138, 90.0191],
+         [90.0054, 90.0712, 89.9984],
+         [89.9711, 90.0777, 90.0855],
+         [90.0109, 90.0409, 90.0148],
+         [90.0251, 90.0779, 90.0510],
+         [89.9728, 90.0623, 90.0037],
+         [90.0312, 90.0620, 89.9825],
+         [90.0417, 90.0893, 90.0040],
+         [90.0442, 90.0779, 90.0092],
+         [90.0400, 90.0432, 89.9981],
+         [90.1014, 90.1021, 90.0505],
+         [90.0347, 90.0796, 90.0076],
+         [90.0121, 90.0562, 90.0175],
+         [89.9762, 90.0626, 90.0032],
+         [90.0144, 90.1021, 90.0002],
+         [90.0331, 90.0565, 89.9937],
+         [89.9804, 90.0842, 90.0700],
+         [90.0197, 90.0505, 89.9916],
+         [90.0015, 90.0795, 90.0187],
+         [90.0432, 90.1203, 89.9932],
+         [89.9838, 90.0366, 90.0182],
+         [90.0510, 90.0720, 89.9874],
+         [90.0155, 90.0602, 90.0648],
+         [90.0219, 90.0791, 89.9947],
+         [89.9719, 90.0845, 89.9562],
+         [90.0176, 90.0797, 90.0264],
+         [90.0071, 90.0719, 90.0380],
+         [90.0151, 90.0495, 90.0051],
+         [90.0089, 90.0483, 89.9937],
+         [90.0157, 90.0749, 89.9826],
+         [90.0112, 90.0688, 90.0293],
+         [90.0076, 90.0787, 89.9829],
+         [89.9911, 90.0843, 90.0233],
+         [90.0261, 90.0852, 90.0482],
+         [90.0383, 90.0694, 89.9820],
+         [90.0354, 90.0794, 90.0228],
+         [90.0160, 90.0846, 90.0038],
+         [89.9924, 90.0407, 90.0270],
+         [90.0364, 90.0690, 89.9957],
+         [89.9935, 90.0860, 90.0324],
+         [90.0121, 90.0960, 89.9531],
+         [90.0244, 90.0676, 90.0147],
+         [90.0296, 90.0942, 90.0091],
+         [89.9948, 90.0767, 90.0217],
+         [90.0237, 90.0781, 89.9905],
+         [90.0198, 90.0751, 90.0354],
+         [90.0790, 90.1259, 90.0379],
+         [90.0189, 90.0477, 90.0045],
+         [89.9971, 90.1493, 90.1334],
+         [90.0223, 90.0465, 90.0306],
+         [90.0136, 90.1135, 89.9915],
+         [89.9982, 90.0463, 89.9876],
+         [90.0556, 90.1056, 89.9927],
+         [90.0032, 90.0679, 90.0348],
+         [90.0152, 90.0970, 90.0233],
+         [90.0233, 90.0650, 90.0125],
+         [90.0513, 90.1163, 90.0589],
+         [90.0300, 90.0784, 90.0120],
+         [90.0424, 90.0785, 90.0774],
+         [90.0053, 90.0518, 90.0118],
+         [90.0033, 90.0955, 90.0351],
+         [90.0087, 90.0529, 90.0231],
+         [90.0055, 90.0395, 90.0120],
+         [90.0104, 90.0603, 90.0417],
+         [90.0215, 90.1310, 90.0359],
+         [90.0128, 90.0597, 90.0424],
+         [89.9930, 90.0692, 89.9884],
+         [90.0356, 90.0906, 90.0288],
+         [90.0041, 90.0795, 89.9904],
+         [90.0414, 90.0627, 90.0502],
+         [90.0170, 90.0616, 90.0149],
+         [89.9940, 90.0671, 89.9929],
+         [90.0182, 90.1062, 90.0060],
+         [90.0207, 90.0969, 89.9892],
+         [90.0394, 90.0747, 89.9400],
+         [89.9896, 90.0252, 90.0381],
+         [90.0108, 90.0717, 90.0490],
+         [89.9842, 90.1120, 90.0324],
+         [90.0061, 90.0260, 89.9914],
+         [90.0064, 90.0774, 90.0372],
+         [90.0065, 90.0644, 89.9788],
+         [90.0013, 90.0800, 90.0078],
+         [90.0351, 90.0605, 90.0029],
+         [90.0529, 90.1331, 90.0000],
+         [90.0137, 90.0519, 90.0200],
+         [90.0454, 90.1346, 90.0039],
+         [90.0006, 90.0372, 90.0106],
+         [89.9921, 90.0592, 90.0399],
+         [90.0004, 90.0030, 90.0687],
+         [90.0303, 90.0535, 90.0157],
+         [89.9842, 90.0900, 89.9936],
+         [90.0113, 90.0960, 90.0581],
+         [89.9892, 90.0556, 90.0332],
+         [89.9924, 90.0460, 90.0331],
+         [90.0496, 90.0718, 90.0066],
+         [90.0041, 90.1035, 89.9990],
+         [90.0114, 90.0802, 90.0064],
+         [90.0456, 90.0701, 90.0114],
+         [90.0849, 90.0949, 89.9938],
+         [90.0027, 90.0574, 90.0460],
+         [90.0097, 90.0420, 90.0115],
+         [90.0088, 90.0468, 89.9589],
+         [90.0119, 90.0288, 90.0038],
+         [90.0294, 90.0859, 90.0151],
+         [90.0329, 90.1251, 90.0146],
+         [90.0096, 90.0484, 90.0269],
+         [90.0147, 90.0270, 90.0101],
+         [89.9905, 90.0431, 89.9941],
+         [90.0093, 90.0529, 89.9815],
+         [89.9805, 90.0508, 90.0360],
+         [90.0069, 90.0598, 89.9851],
+         [90.0084, 90.0765, 90.0515],
+         [89.9963, 90.0500, 89.9934],
+         [90.0024, 90.0710, 89.9629],
+         [90.0176, 90.0798, 90.0475],
+         [89.9917, 90.0498, 89.9984],
+         [90.0740, 90.0828, 90.0515],
+         [90.0631, 90.0167, 90.0117],
+         [90.0203, 90.0945, 90.0123],
+         [90.0072, 90.0731, 89.9948],
+         [90.0133, 90.1023, 90.0120],
+         [90.0696, 90.1345, 89.9713],
+         [89.9760, 90.0576, 90.0265],
+         [89.9898, 90.0365, 90.0214],
+         [90.0003, 90.0691, 90.0331],
+         [90.0278, 90.0648, 90.0238],
+         [89.9782, 90.0287, 90.0455],
+         [90.0589, 90.0972, 89.9977],
+         [89.9794, 90.0076, 90.0374],
+         [90.0138, 90.1017, 89.9884],
+         [89.9923, 90.0490, 90.0137],
+         [90.0315, 90.0952, 90.0289],
+         [89.9815, 90.0273, 90.0657],
+         [90.0281, 90.0337, 89.9903],
+         [89.9796, 90.0815, 89.9985],
+         [90.0137, 90.0876, 90.0368],
+         [90.0426, 90.0780, 90.0151],
+         [89.9614, 90.0367, 90.0041],
+         [90.0292, 90.0877, 89.9899],
+         [90.0145, 90.0480, 90.0158],
+         [90.0212, 90.1134, 90.0428],
+         [90.0106, 90.0444, 89.9977],
+         [90.0508, 90.1177, 90.0822],
+         [90.0183, 90.0904, 90.0270],
+         [89.9916, 90.0519, 90.0596],
+         [90.0347, 90.0768, 90.0042],
+         [90.0021, 90.0697, 89.9865],
+         [90.0428, 90.0701, 90.0444],
+         [90.0042, 90.0507, 90.0147],
+         [90.0345, 90.0940, 90.0341],
+         [90.0719, 90.1040, 89.9698],
+         [90.0208, 90.0834, 90.0129],
+         [90.0499, 90.0548, 90.0213],
+         [89.9998, 90.0381, 89.9872],
+         [90.0040, 90.0362, 90.0216],
+         [90.0622, 90.0950, 89.9407],
+         [90.0449, 90.1095, 90.0251],
+         [90.0143, 90.0753, 90.0213],
+         [90.0451, 90.0311, 90.0655],
+         [90.0526, 90.0255, 90.0371],
+         [90.0099, 90.1163, 90.0067],
+         [90.0174, 90.0428, 90.0259],
+         [89.9908, 90.0475, 89.9812],
+         [90.0611, 90.0959, 90.0343],
+         [90.0591, 90.0828, 90.0326],
+         [90.0377, 90.0896, 90.0040],
+         [90.0260, 90.0763, 90.0490],
+         [90.0188, 90.0663, 89.9863],
+         [89.9934, 90.0442, 90.0420],
+         [90.0688, 90.1127, 89.9944],
+         [90.0265, 90.0805, 90.0328],
+         [90.0156, 90.0539, 90.0433],
+         [90.0085, 90.0513, 90.0096],
+         [90.0355, 90.0519, 90.0104],
+         [90.0130, 90.0845, 90.0306],
+         [89.9941, 90.0713, 90.0029],
+         [90.0451, 90.0886, 90.0094],
+         [90.0455, 90.0927, 90.0230]]]), 'time': 467.6002972126007}</code></pre>
+</div>
+</div>
+<div id="cell-31" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>tensor[<span class="st">"frac_coords"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<pre><code>tensor([[[0.7583, 0.6388, 0.9255],
+         [0.2585, 0.6387, 0.4218],
+         [0.7577, 0.6386, 0.4260],
+         ...,
+         [0.7184, 0.3231, 0.4108],
+         [0.2183, 0.3237, 0.4048],
+         [0.2183, 0.8233, 0.4114]]])</code></pre>
+</div>
+</div>
+<div id="cell-32" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>cd <span class="st">"/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/diffcsp_2204/lib/python3.11/site-packages/IPython/core/magics/osm.py:417: UserWarning: This is now an optional IPython functionality, setting dhist requires you to install the `pickleshare` library.
+  self.shell.db['dhist'] = compress_dhist(dhist)[-100:]</code></pre>
+</div>
+</div>
+<p>import sys sys.path.append(‘/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP’) # adjust this path as necessary from scripts.sample import get_crystals_list</p>
+</section>
+<section id="now-you-can-use-the-function" class="level1">
+<h1>Now you can use the function</h1>
+<p>crystal_list = get_crystals_list(tensor[“frac_coords”], tensor[“atom_types”], tensor[“lengths”], tensor[“angles”], tensor[“num_atoms”])</p>
+<div id="cell-34" class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>crystal_list <span class="op">=</span> get_crystals_list(tensor[<span class="st">"frac_coords"</span>], tensor[<span class="st">"atom_types"</span>], tensor[<span class="st">"lengths"</span>], tensor[<span class="st">"angles"</span>], tensor[<span class="st">"num_atoms"</span>])</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>strcuture_list <span class="op">=</span> p_map(get_pymatgen, crystal_list)</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i,structure <span class="kw">in</span> <span class="bu">enumerate</span>(strcuture_list):</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>    tar_file <span class="op">=</span> os.path.join(tar_dir, <span class="ss">f"</span><span class="sc">{</span>args<span class="sc">.</span>formula<span class="sc">}</span><span class="ss">_</span><span class="sc">{</span>i<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss">.cif"</span>)</span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> structure <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>        writer <span class="op">=</span> CifWriter(structure)</span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>        writer.write_file(tar_file)</span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>i<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss"> Error Structure."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-35" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the directory</span></span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a>source_dir <span class="op">=</span> <span class="st">"/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/data/chilicifs"</span></span>
+<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Get a list of all the .cif files</span></span>
+<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a>files <span class="op">=</span> [f <span class="cf">for</span> f <span class="kw">in</span> os.listdir(source_dir) <span class="cf">if</span> f.endswith(<span class="st">'.cif'</span>)]</span>
+<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-11"><a href="#cb47-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Read each .cif file and store its content as a row in a DataFrame</span></span>
+<span id="cb47-12"><a href="#cb47-12" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> []</span>
+<span id="cb47-13"><a href="#cb47-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="bu">file</span> <span class="kw">in</span> files:</span>
+<span id="cb47-14"><a href="#cb47-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(os.path.join(source_dir, <span class="bu">file</span>), <span class="st">'r'</span>) <span class="im">as</span> f:</span>
+<span id="cb47-15"><a href="#cb47-15" aria-hidden="true" tabindex="-1"></a>        content <span class="op">=</span> f.read()</span>
+<span id="cb47-16"><a href="#cb47-16" aria-hidden="true" tabindex="-1"></a>        data.append([<span class="bu">file</span>, content])</span>
+<span id="cb47-17"><a href="#cb47-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-18"><a href="#cb47-18" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data, columns<span class="op">=</span>[<span class="st">'filename'</span>, <span class="st">'cif'</span>])</span>
+<span id="cb47-19"><a href="#cb47-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-20"><a href="#cb47-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Shuffle the DataFrame</span></span>
+<span id="cb47-21"><a href="#cb47-21" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sample(frac<span class="op">=</span><span class="dv">1</span>).reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb47-22"><a href="#cb47-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-23"><a href="#cb47-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Split the DataFrame into train, test, and eval</span></span>
+<span id="cb47-24"><a href="#cb47-24" aria-hidden="true" tabindex="-1"></a>train_df <span class="op">=</span> df[:<span class="bu">int</span>(<span class="bu">len</span>(df)<span class="op">*</span><span class="fl">0.7</span>)]</span>
+<span id="cb47-25"><a href="#cb47-25" aria-hidden="true" tabindex="-1"></a>test_df <span class="op">=</span> df[<span class="bu">int</span>(<span class="bu">len</span>(df)<span class="op">*</span><span class="fl">0.7</span>):<span class="bu">int</span>(<span class="bu">len</span>(df)<span class="op">*</span><span class="fl">0.85</span>)]</span>
+<span id="cb47-26"><a href="#cb47-26" aria-hidden="true" tabindex="-1"></a>eval_df <span class="op">=</span> df[<span class="bu">int</span>(<span class="bu">len</span>(df)<span class="op">*</span><span class="fl">0.85</span>):]</span>
+<span id="cb47-27"><a href="#cb47-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-28"><a href="#cb47-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Save each set to a separate CSV file</span></span>
+<span id="cb47-29"><a href="#cb47-29" aria-hidden="true" tabindex="-1"></a>train_df.to_csv(<span class="st">"/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/data/CHILI-3K_CIFs/train.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb47-30"><a href="#cb47-30" aria-hidden="true" tabindex="-1"></a>test_df.to_csv(<span class="st">"/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/data/CHILI-3K_CIFs/test.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb47-31"><a href="#cb47-31" aria-hidden="true" tabindex="-1"></a>eval_df.to_csv(<span class="st">"/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/data/CHILI-3K_CIFs/val.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
