@@ -31,7 +31,7 @@ from pytorch_lightning.callbacks import (
 )
 from pytorch_lightning.loggers import WandbLogger
 
-from DiffCSP.diffcsp.common.utils import log_hyperparameters, PROJECT_ROOT
+from diffcsp.common.utils import log_hyperparameters, PROJECT_ROOT
 
 # import DiffCSP
 

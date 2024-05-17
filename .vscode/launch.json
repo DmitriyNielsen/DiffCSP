@@ -124,8 +124,8 @@
             "program": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/DiffCSP/diffcsp/run.py",
             "console": "integratedTerminal",
             "args": [   
-            "--dataset", "perov_5",
-            "expname", "exp_09052024",
+            "data=perov_5",
+            "expname=exp_09052024",
             ],
             "python": "/Users/dmitriynielsen/GitHub/DiffCSP/New_try02/diffcsp_2204/bin/python3",
             "env": {
