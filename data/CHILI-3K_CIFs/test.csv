@@ -1,0 +1,3675 @@
+filename,material_id,cif
+Wurtzite_HgO.cif,646,"data_image0
+_chemical_formula_structural       Hg2O2
+_chemical_formula_sum              ""Hg2 O2""
+_cell_length_a       3.38182
+_cell_length_b       3.38182
+_cell_length_c       5.48734
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Hg  Hg1       1.0  0.33333  0.66667  0.00000  1.0000
+  Hg  Hg2       1.0  0.66667  0.33333  0.50000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.37500  1.0000
+  O   O2        1.0  0.66667  0.33333  0.87500  1.0000
+"
+Fluorite_PtO2.cif,164,"data_image0
+_chemical_formula_structural       Pt4O8
+_chemical_formula_sum              ""Pt4 O8""
+_cell_length_a       5.32066
+_cell_length_b       5.32066
+_cell_length_c       5.32066
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Pt  Pt1       1.0  0.00000  0.00000  0.00000  1.0000
+  Pt  Pt2       1.0  0.00000  0.50000  0.50000  1.0000
+  Pt  Pt3       1.0  0.50000  0.00000  0.50000  1.0000
+  Pt  Pt4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.25000  0.25000  0.25000  1.0000
+  O   O2        1.0  0.75000  0.75000  0.25000  1.0000
+  O   O3        1.0  0.75000  0.25000  0.75000  1.0000
+  O   O4        1.0  0.25000  0.75000  0.75000  1.0000
+  O   O5        1.0  0.25000  0.25000  0.75000  1.0000
+  O   O6        1.0  0.75000  0.75000  0.75000  1.0000
+  O   O7        1.0  0.25000  0.75000  0.25000  1.0000
+  O   O8        1.0  0.75000  0.25000  0.25000  1.0000
+"
+AntiFluorite_Be2O.cif,187,"data_image0
+_chemical_formula_structural       Be8O4
+_chemical_formula_sum              ""Be8 O4""
+_cell_length_a       4.23188
+_cell_length_b       4.23188
+_cell_length_c       4.23188
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Be  Be1       1.0  0.25000  0.25000  0.25000  1.0000
+  Be  Be2       1.0  0.75000  0.75000  0.25000  1.0000
+  Be  Be3       1.0  0.75000  0.25000  0.75000  1.0000
+  Be  Be4       1.0  0.25000  0.75000  0.75000  1.0000
+  Be  Be5       1.0  0.25000  0.25000  0.75000  1.0000
+  Be  Be6       1.0  0.75000  0.75000  0.75000  1.0000
+  Be  Be7       1.0  0.25000  0.75000  0.25000  1.0000
+  Be  Be8       1.0  0.75000  0.25000  0.25000  1.0000
+  O   O1        1.0  0.00000  0.00000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.50000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.50000  1.0000
+  O   O4        1.0  0.50000  0.50000  0.00000  1.0000
+"
+RheniumTrioxide_KO3.cif,17,"data_image0
+_chemical_formula_structural       KO3
+_chemical_formula_sum              ""K1 O3""
+_cell_length_a       3.90656
+_cell_length_b       3.90656
+_cell_length_c       3.90656
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  K   K1        1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.00000  0.50000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.00000  1.0000
+"
+CadmiumChloride_NaO2.cif,446,"data_image0
+_chemical_formula_structural       Na3O6
+_chemical_formula_sum              ""Na3 O6""
+_cell_length_a       3.34644
+_cell_length_b       3.34644
+_cell_length_c       15.7094
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Na  Na1       1.0  0.00000  0.00000  0.00000  1.0000
+  Na  Na2       1.0  0.66667  0.33333  0.33333  1.0000
+  Na  Na3       1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+CaesiumChloride_VO.cif,157,"data_image0
+_chemical_formula_structural       VO
+_chemical_formula_sum              ""V1 O1""
+_cell_length_a       2.6187
+_cell_length_b       2.6187
+_cell_length_c       2.6187
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  V   V1        1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+"
+Spinel_TlTl2O4.cif,244,"data_image0
+_chemical_formula_structural       Tl24O32
+_chemical_formula_sum              ""Tl24 O32""
+_cell_length_a       8.87019
+_cell_length_b       8.87019
+_cell_length_c       8.87019
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Tl  Tl1       1.0  0.50000  0.50000  0.50000  1.0000
+  Tl  Tl2       1.0  0.50000  0.00000  0.00000  1.0000
+  Tl  Tl3       1.0  0.00000  0.00000  0.50000  1.0000
+  Tl  Tl4       1.0  0.00000  0.50000  0.00000  1.0000
+  Tl  Tl5       1.0  0.25000  0.75000  0.25000  1.0000
+  Tl  Tl6       1.0  0.75000  0.75000  0.75000  1.0000
+  Tl  Tl7       1.0  0.75000  0.25000  0.25000  1.0000
+  Tl  Tl8       1.0  0.25000  0.25000  0.75000  1.0000
+  Tl  Tl9       1.0  0.12500  0.12500  0.12500  1.0000
+  Tl  Tl10      1.0  0.87500  0.37500  0.62500  1.0000
+  Tl  Tl11      1.0  0.37500  0.62500  0.87500  1.0000
+  Tl  Tl12      1.0  0.62500  0.87500  0.37500  1.0000
+  Tl  Tl13      1.0  0.37500  0.87500  0.62500  1.0000
+  Tl  Tl14      1.0  0.87500  0.62500  0.37500  1.0000
+  Tl  Tl15      1.0  0.62500  0.37500  0.87500  1.0000
+  Tl  Tl16      1.0  0.12500  0.62500  0.62500  1.0000
+  Tl  Tl17      1.0  0.87500  0.87500  0.12500  1.0000
+  Tl  Tl18      1.0  0.37500  0.12500  0.37500  1.0000
+  Tl  Tl19      1.0  0.37500  0.37500  0.12500  1.0000
+  Tl  Tl20      1.0  0.87500  0.12500  0.87500  1.0000
+  Tl  Tl21      1.0  0.62500  0.12500  0.62500  1.0000
+  Tl  Tl22      1.0  0.12500  0.87500  0.87500  1.0000
+  Tl  Tl23      1.0  0.12500  0.37500  0.37500  1.0000
+  Tl  Tl24      1.0  0.62500  0.62500  0.12500  1.0000
+  O   O1        1.0  0.36260  0.36260  0.36260  1.0000
+  O   O2        1.0  0.63740  0.13740  0.86260  1.0000
+  O   O3        1.0  0.13740  0.86260  0.63740  1.0000
+  O   O4        1.0  0.86260  0.63740  0.13740  1.0000
+  O   O5        1.0  0.11260  0.61260  0.38740  1.0000
+  O   O6        1.0  0.88740  0.88740  0.88740  1.0000
+  O   O7        1.0  0.61260  0.38740  0.11260  1.0000
+  O   O8        1.0  0.38740  0.11260  0.61260  1.0000
+  O   O9        1.0  0.61260  0.11260  0.38740  1.0000
+  O   O10       1.0  0.11260  0.38740  0.61260  1.0000
+  O   O11       1.0  0.38740  0.61260  0.11260  1.0000
+  O   O12       1.0  0.13740  0.63740  0.86260  1.0000
+  O   O13       1.0  0.63740  0.86260  0.13740  1.0000
+  O   O14       1.0  0.86260  0.13740  0.63740  1.0000
+  O   O15       1.0  0.36260  0.86260  0.86260  1.0000
+  O   O16       1.0  0.63740  0.63740  0.36260  1.0000
+  O   O17       1.0  0.13740  0.36260  0.13740  1.0000
+  O   O18       1.0  0.11260  0.11260  0.88740  1.0000
+  O   O19       1.0  0.88740  0.38740  0.38740  1.0000
+  O   O20       1.0  0.61260  0.88740  0.61260  1.0000
+  O   O21       1.0  0.61260  0.61260  0.88740  1.0000
+  O   O22       1.0  0.11260  0.88740  0.11260  1.0000
+  O   O23       1.0  0.13740  0.13740  0.36260  1.0000
+  O   O24       1.0  0.63740  0.36260  0.63740  1.0000
+  O   O25       1.0  0.86260  0.36260  0.86260  1.0000
+  O   O26       1.0  0.36260  0.63740  0.63740  1.0000
+  O   O27       1.0  0.38740  0.88740  0.38740  1.0000
+  O   O28       1.0  0.88740  0.11260  0.11260  1.0000
+  O   O29       1.0  0.88740  0.61260  0.61260  1.0000
+  O   O30       1.0  0.36260  0.13740  0.13740  1.0000
+  O   O31       1.0  0.86260  0.86260  0.36260  1.0000
+  O   O32       1.0  0.38740  0.38740  0.88740  1.0000
+"
+Fluorite_RhO2.cif,325,"data_image0
+_chemical_formula_structural       Rh4O8
+_chemical_formula_sum              ""Rh4 O8""
+_cell_length_a       5.27693
+_cell_length_b       5.27693
+_cell_length_c       5.27693
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Rh  Rh1       1.0  0.00000  0.00000  0.00000  1.0000
+  Rh  Rh2       1.0  0.00000  0.50000  0.50000  1.0000
+  Rh  Rh3       1.0  0.50000  0.00000  0.50000  1.0000
+  Rh  Rh4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.25000  0.25000  0.25000  1.0000
+  O   O2        1.0  0.75000  0.75000  0.25000  1.0000
+  O   O3        1.0  0.75000  0.25000  0.75000  1.0000
+  O   O4        1.0  0.25000  0.75000  0.75000  1.0000
+  O   O5        1.0  0.25000  0.25000  0.75000  1.0000
+  O   O6        1.0  0.75000  0.75000  0.75000  1.0000
+  O   O7        1.0  0.25000  0.75000  0.25000  1.0000
+  O   O8        1.0  0.75000  0.25000  0.25000  1.0000
+"
+CadmiumChloride_ReO2.cif,616,"data_image0
+_chemical_formula_structural       Re3O6
+_chemical_formula_sum              ""Re3 O6""
+_cell_length_a       3.165
+_cell_length_b       3.165
+_cell_length_c       14.5984
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Re  Re1       1.0  0.00000  0.00000  0.00000  1.0000
+  Re  Re2       1.0  0.66667  0.33333  0.33333  1.0000
+  Re  Re3       1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+Spinel_RaRa2O4.cif,146,"data_image0
+_chemical_formula_structural       Ra24O32
+_chemical_formula_sum              ""Ra24 O32""
+_cell_length_a       10.8088
+_cell_length_b       10.8088
+_cell_length_c       10.8088
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ra  Ra1       1.0  0.50000  0.50000  0.50000  1.0000
+  Ra  Ra2       1.0  0.50000  0.00000  0.00000  1.0000
+  Ra  Ra3       1.0  0.00000  0.00000  0.50000  1.0000
+  Ra  Ra4       1.0  0.00000  0.50000  0.00000  1.0000
+  Ra  Ra5       1.0  0.25000  0.75000  0.25000  1.0000
+  Ra  Ra6       1.0  0.75000  0.75000  0.75000  1.0000
+  Ra  Ra7       1.0  0.75000  0.25000  0.25000  1.0000
+  Ra  Ra8       1.0  0.25000  0.25000  0.75000  1.0000
+  Ra  Ra9       1.0  0.12500  0.12500  0.12500  1.0000
+  Ra  Ra10      1.0  0.87500  0.37500  0.62500  1.0000
+  Ra  Ra11      1.0  0.37500  0.62500  0.87500  1.0000
+  Ra  Ra12      1.0  0.62500  0.87500  0.37500  1.0000
+  Ra  Ra13      1.0  0.37500  0.87500  0.62500  1.0000
+  Ra  Ra14      1.0  0.87500  0.62500  0.37500  1.0000
+  Ra  Ra15      1.0  0.62500  0.37500  0.87500  1.0000
+  Ra  Ra16      1.0  0.12500  0.62500  0.62500  1.0000
+  Ra  Ra17      1.0  0.87500  0.87500  0.12500  1.0000
+  Ra  Ra18      1.0  0.37500  0.12500  0.37500  1.0000
+  Ra  Ra19      1.0  0.37500  0.37500  0.12500  1.0000
+  Ra  Ra20      1.0  0.87500  0.12500  0.87500  1.0000
+  Ra  Ra21      1.0  0.62500  0.12500  0.62500  1.0000
+  Ra  Ra22      1.0  0.12500  0.87500  0.87500  1.0000
+  Ra  Ra23      1.0  0.12500  0.37500  0.37500  1.0000
+  Ra  Ra24      1.0  0.62500  0.62500  0.12500  1.0000
+  O   O1        1.0  0.36260  0.36260  0.36260  1.0000
+  O   O2        1.0  0.63740  0.13740  0.86260  1.0000
+  O   O3        1.0  0.13740  0.86260  0.63740  1.0000
+  O   O4        1.0  0.86260  0.63740  0.13740  1.0000
+  O   O5        1.0  0.11260  0.61260  0.38740  1.0000
+  O   O6        1.0  0.88740  0.88740  0.88740  1.0000
+  O   O7        1.0  0.61260  0.38740  0.11260  1.0000
+  O   O8        1.0  0.38740  0.11260  0.61260  1.0000
+  O   O9        1.0  0.61260  0.11260  0.38740  1.0000
+  O   O10       1.0  0.11260  0.38740  0.61260  1.0000
+  O   O11       1.0  0.38740  0.61260  0.11260  1.0000
+  O   O12       1.0  0.13740  0.63740  0.86260  1.0000
+  O   O13       1.0  0.63740  0.86260  0.13740  1.0000
+  O   O14       1.0  0.86260  0.13740  0.63740  1.0000
+  O   O15       1.0  0.36260  0.86260  0.86260  1.0000
+  O   O16       1.0  0.63740  0.63740  0.36260  1.0000
+  O   O17       1.0  0.13740  0.36260  0.13740  1.0000
+  O   O18       1.0  0.11260  0.11260  0.88740  1.0000
+  O   O19       1.0  0.88740  0.38740  0.38740  1.0000
+  O   O20       1.0  0.61260  0.88740  0.61260  1.0000
+  O   O21       1.0  0.61260  0.61260  0.88740  1.0000
+  O   O22       1.0  0.11260  0.88740  0.11260  1.0000
+  O   O23       1.0  0.13740  0.13740  0.36260  1.0000
+  O   O24       1.0  0.63740  0.36260  0.63740  1.0000
+  O   O25       1.0  0.86260  0.36260  0.86260  1.0000
+  O   O26       1.0  0.36260  0.63740  0.63740  1.0000
+  O   O27       1.0  0.38740  0.88740  0.38740  1.0000
+  O   O28       1.0  0.88740  0.11260  0.11260  1.0000
+  O   O29       1.0  0.88740  0.61260  0.61260  1.0000
+  O   O30       1.0  0.36260  0.13740  0.13740  1.0000
+  O   O31       1.0  0.86260  0.86260  0.36260  1.0000
+  O   O32       1.0  0.38740  0.38740  0.88740  1.0000
+"
+RheniumTrioxide_BiO3.cif,540,"data_image0
+_chemical_formula_structural       BiO3
+_chemical_formula_sum              ""Bi1 O3""
+_cell_length_a       3.90096
+_cell_length_b       3.90096
+_cell_length_c       3.90096
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Bi  Bi1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.00000  0.50000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.00000  1.0000
+"
+CadmiumChloride_TeO2.cif,445,"data_image0
+_chemical_formula_structural       Te3O6
+_chemical_formula_sum              ""Te3 O6""
+_cell_length_a       3.22131
+_cell_length_b       3.22131
+_cell_length_c       14.9432
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Te  Te1       1.0  0.00000  0.00000  0.00000  1.0000
+  Te  Te2       1.0  0.66667  0.33333  0.33333  1.0000
+  Te  Te3       1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+Spinel_KK2O4.cif,228,"data_image0
+_chemical_formula_structural       K24O32
+_chemical_formula_sum              ""K24 O32""
+_cell_length_a       10.4811
+_cell_length_b       10.4811
+_cell_length_c       10.4811
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  K   K1        1.0  0.50000  0.50000  0.50000  1.0000
+  K   K2        1.0  0.50000  0.00000  0.00000  1.0000
+  K   K3        1.0  0.00000  0.00000  0.50000  1.0000
+  K   K4        1.0  0.00000  0.50000  0.00000  1.0000
+  K   K5        1.0  0.25000  0.75000  0.25000  1.0000
+  K   K6        1.0  0.75000  0.75000  0.75000  1.0000
+  K   K7        1.0  0.75000  0.25000  0.25000  1.0000
+  K   K8        1.0  0.25000  0.25000  0.75000  1.0000
+  K   K9        1.0  0.12500  0.12500  0.12500  1.0000
+  K   K10       1.0  0.87500  0.37500  0.62500  1.0000
+  K   K11       1.0  0.37500  0.62500  0.87500  1.0000
+  K   K12       1.0  0.62500  0.87500  0.37500  1.0000
+  K   K13       1.0  0.37500  0.87500  0.62500  1.0000
+  K   K14       1.0  0.87500  0.62500  0.37500  1.0000
+  K   K15       1.0  0.62500  0.37500  0.87500  1.0000
+  K   K16       1.0  0.12500  0.62500  0.62500  1.0000
+  K   K17       1.0  0.87500  0.87500  0.12500  1.0000
+  K   K18       1.0  0.37500  0.12500  0.37500  1.0000
+  K   K19       1.0  0.37500  0.37500  0.12500  1.0000
+  K   K20       1.0  0.87500  0.12500  0.87500  1.0000
+  K   K21       1.0  0.62500  0.12500  0.62500  1.0000
+  K   K22       1.0  0.12500  0.87500  0.87500  1.0000
+  K   K23       1.0  0.12500  0.37500  0.37500  1.0000
+  K   K24       1.0  0.62500  0.62500  0.12500  1.0000
+  O   O1        1.0  0.36260  0.36260  0.36260  1.0000
+  O   O2        1.0  0.63740  0.13740  0.86260  1.0000
+  O   O3        1.0  0.13740  0.86260  0.63740  1.0000
+  O   O4        1.0  0.86260  0.63740  0.13740  1.0000
+  O   O5        1.0  0.11260  0.61260  0.38740  1.0000
+  O   O6        1.0  0.88740  0.88740  0.88740  1.0000
+  O   O7        1.0  0.61260  0.38740  0.11260  1.0000
+  O   O8        1.0  0.38740  0.11260  0.61260  1.0000
+  O   O9        1.0  0.61260  0.11260  0.38740  1.0000
+  O   O10       1.0  0.11260  0.38740  0.61260  1.0000
+  O   O11       1.0  0.38740  0.61260  0.11260  1.0000
+  O   O12       1.0  0.13740  0.63740  0.86260  1.0000
+  O   O13       1.0  0.63740  0.86260  0.13740  1.0000
+  O   O14       1.0  0.86260  0.13740  0.63740  1.0000
+  O   O15       1.0  0.36260  0.86260  0.86260  1.0000
+  O   O16       1.0  0.63740  0.63740  0.36260  1.0000
+  O   O17       1.0  0.13740  0.36260  0.13740  1.0000
+  O   O18       1.0  0.11260  0.11260  0.88740  1.0000
+  O   O19       1.0  0.88740  0.38740  0.38740  1.0000
+  O   O20       1.0  0.61260  0.88740  0.61260  1.0000
+  O   O21       1.0  0.61260  0.61260  0.88740  1.0000
+  O   O22       1.0  0.11260  0.88740  0.11260  1.0000
+  O   O23       1.0  0.13740  0.13740  0.36260  1.0000
+  O   O24       1.0  0.63740  0.36260  0.63740  1.0000
+  O   O25       1.0  0.86260  0.36260  0.86260  1.0000
+  O   O26       1.0  0.36260  0.63740  0.63740  1.0000
+  O   O27       1.0  0.38740  0.88740  0.38740  1.0000
+  O   O28       1.0  0.88740  0.11260  0.11260  1.0000
+  O   O29       1.0  0.88740  0.61260  0.61260  1.0000
+  O   O30       1.0  0.36260  0.13740  0.13740  1.0000
+  O   O31       1.0  0.86260  0.86260  0.36260  1.0000
+  O   O32       1.0  0.38740  0.38740  0.88740  1.0000
+"
+CaesiumChloride_CoO.cif,549,"data_image0
+_chemical_formula_structural       CoO
+_chemical_formula_sum              ""Co1 O1""
+_cell_length_a       2.56036
+_cell_length_b       2.56036
+_cell_length_c       2.56036
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Co  Co1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+"
+ZincBlende_ScO.cif,133,"data_image0
+_chemical_formula_structural       Sc4O4
+_chemical_formula_sum              ""Sc4 O4""
+_cell_length_a       4.92898
+_cell_length_b       4.92898
+_cell_length_c       4.92898
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Sc  Sc1       1.0  0.00000  0.00000  0.00000  1.0000
+  Sc  Sc2       1.0  0.00000  0.50000  0.50000  1.0000
+  Sc  Sc3       1.0  0.50000  0.00000  0.50000  1.0000
+  Sc  Sc4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.25000  0.25000  0.25000  1.0000
+  O   O2        1.0  0.75000  0.75000  0.25000  1.0000
+  O   O3        1.0  0.75000  0.25000  0.75000  1.0000
+  O   O4        1.0  0.25000  0.75000  0.75000  1.0000
+"
+CadmiumChloride_PdO2.cif,392,"data_image0
+_chemical_formula_structural       Pd3O6
+_chemical_formula_sum              ""Pd3 O6""
+_cell_length_a       3.165
+_cell_length_b       3.165
+_cell_length_c       14.5984
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Pd  Pd1       1.0  0.00000  0.00000  0.00000  1.0000
+  Pd  Pd2       1.0  0.66667  0.33333  0.33333  1.0000
+  Pd  Pd3       1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+Wurtzite_ZrO.cif,261,"data_image0
+_chemical_formula_structural       Zr2O2
+_chemical_formula_sum              ""Zr2 O2""
+_cell_length_a       3.47939
+_cell_length_b       3.47939
+_cell_length_c       5.65073
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Zr  Zr1       1.0  0.33333  0.66667  0.00000  1.0000
+  Zr  Zr2       1.0  0.66667  0.33333  0.50000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.37500  1.0000
+  O   O2        1.0  0.66667  0.33333  0.87500  1.0000
+"
+NickelArsenide_InO.cif,613,"data_image0
+_chemical_formula_structural       In2O2
+_chemical_formula_sum              ""In2 O2""
+_cell_length_a       3.13442
+_cell_length_b       3.13442
+_cell_length_c       5.20843
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  In  In1       1.0  0.00000  0.00000  0.00000  1.0000
+  In  In2       1.0  1.00000  1.00000  0.50000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.25000  1.0000
+  O   O2        1.0  0.66667  0.33333  0.75000  1.0000
+"
+RockSalt_TlO.cif,257,"data_image0
+_chemical_formula_structural       Tl4O4
+_chemical_formula_sum              ""Tl4 O4""
+_cell_length_a       4.69049
+_cell_length_b       4.69049
+_cell_length_c       4.69049
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Tl  Tl1       1.0  0.00000  0.00000  0.00000  1.0000
+  Tl  Tl2       1.0  0.00000  0.50000  0.50000  1.0000
+  Tl  Tl3       1.0  0.50000  0.00000  0.50000  1.0000
+  Tl  Tl4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+  O   O2        1.0  0.50000  0.00000  0.00000  1.0000
+  O   O3        1.0  0.00000  0.50000  0.00000  1.0000
+  O   O4        1.0  0.00000  0.00000  0.50000  1.0000
+"
+Spinel_ReRe2O4.cif,365,"data_image0
+_chemical_formula_structural       Re24O32
+_chemical_formula_sum              ""Re24 O32""
+_cell_length_a       8.43333
+_cell_length_b       8.43333
+_cell_length_c       8.43333
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Re  Re1       1.0  0.50000  0.50000  0.50000  1.0000
+  Re  Re2       1.0  0.50000  0.00000  0.00000  1.0000
+  Re  Re3       1.0  0.00000  0.00000  0.50000  1.0000
+  Re  Re4       1.0  0.00000  0.50000  0.00000  1.0000
+  Re  Re5       1.0  0.25000  0.75000  0.25000  1.0000
+  Re  Re6       1.0  0.75000  0.75000  0.75000  1.0000
+  Re  Re7       1.0  0.75000  0.25000  0.25000  1.0000
+  Re  Re8       1.0  0.25000  0.25000  0.75000  1.0000
+  Re  Re9       1.0  0.12500  0.12500  0.12500  1.0000
+  Re  Re10      1.0  0.87500  0.37500  0.62500  1.0000
+  Re  Re11      1.0  0.37500  0.62500  0.87500  1.0000
+  Re  Re12      1.0  0.62500  0.87500  0.37500  1.0000
+  Re  Re13      1.0  0.37500  0.87500  0.62500  1.0000
+  Re  Re14      1.0  0.87500  0.62500  0.37500  1.0000
+  Re  Re15      1.0  0.62500  0.37500  0.87500  1.0000
+  Re  Re16      1.0  0.12500  0.62500  0.62500  1.0000
+  Re  Re17      1.0  0.87500  0.87500  0.12500  1.0000
+  Re  Re18      1.0  0.37500  0.12500  0.37500  1.0000
+  Re  Re19      1.0  0.37500  0.37500  0.12500  1.0000
+  Re  Re20      1.0  0.87500  0.12500  0.87500  1.0000
+  Re  Re21      1.0  0.62500  0.12500  0.62500  1.0000
+  Re  Re22      1.0  0.12500  0.87500  0.87500  1.0000
+  Re  Re23      1.0  0.12500  0.37500  0.37500  1.0000
+  Re  Re24      1.0  0.62500  0.62500  0.12500  1.0000
+  O   O1        1.0  0.36260  0.36260  0.36260  1.0000
+  O   O2        1.0  0.63740  0.13740  0.86260  1.0000
+  O   O3        1.0  0.13740  0.86260  0.63740  1.0000
+  O   O4        1.0  0.86260  0.63740  0.13740  1.0000
+  O   O5        1.0  0.11260  0.61260  0.38740  1.0000
+  O   O6        1.0  0.88740  0.88740  0.88740  1.0000
+  O   O7        1.0  0.61260  0.38740  0.11260  1.0000
+  O   O8        1.0  0.38740  0.11260  0.61260  1.0000
+  O   O9        1.0  0.61260  0.11260  0.38740  1.0000
+  O   O10       1.0  0.11260  0.38740  0.61260  1.0000
+  O   O11       1.0  0.38740  0.61260  0.11260  1.0000
+  O   O12       1.0  0.13740  0.63740  0.86260  1.0000
+  O   O13       1.0  0.63740  0.86260  0.13740  1.0000
+  O   O14       1.0  0.86260  0.13740  0.63740  1.0000
+  O   O15       1.0  0.36260  0.86260  0.86260  1.0000
+  O   O16       1.0  0.63740  0.63740  0.36260  1.0000
+  O   O17       1.0  0.13740  0.36260  0.13740  1.0000
+  O   O18       1.0  0.11260  0.11260  0.88740  1.0000
+  O   O19       1.0  0.88740  0.38740  0.38740  1.0000
+  O   O20       1.0  0.61260  0.88740  0.61260  1.0000
+  O   O21       1.0  0.61260  0.61260  0.88740  1.0000
+  O   O22       1.0  0.11260  0.88740  0.11260  1.0000
+  O   O23       1.0  0.13740  0.13740  0.36260  1.0000
+  O   O24       1.0  0.63740  0.36260  0.63740  1.0000
+  O   O25       1.0  0.86260  0.36260  0.86260  1.0000
+  O   O26       1.0  0.36260  0.63740  0.63740  1.0000
+  O   O27       1.0  0.38740  0.88740  0.38740  1.0000
+  O   O28       1.0  0.88740  0.11260  0.11260  1.0000
+  O   O29       1.0  0.88740  0.61260  0.61260  1.0000
+  O   O30       1.0  0.36260  0.13740  0.13740  1.0000
+  O   O31       1.0  0.86260  0.86260  0.36260  1.0000
+  O   O32       1.0  0.38740  0.38740  0.88740  1.0000
+"
+Wurtzite_KO.cif,439,"data_image0
+_chemical_formula_structural       K2O2
+_chemical_formula_sum              ""K2 O2""
+_cell_length_a       4.42259
+_cell_length_b       4.42259
+_cell_length_c       7.23017
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  K   K1        1.0  0.33333  0.66667  0.00000  1.0000
+  K   K2        1.0  0.66667  0.33333  0.50000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.37500  1.0000
+  O   O2        1.0  0.66667  0.33333  0.87500  1.0000
+"
+CadmiumChloride_BO2.cif,623,"data_image0
+_chemical_formula_structural       B3O6
+_chemical_formula_sum              ""B3 O6""
+_cell_length_a       2.86469
+_cell_length_b       2.86469
+_cell_length_c       12.7596
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  B   B1        1.0  0.00000  0.00000  0.00000  1.0000
+  B   B2        1.0  0.66667  0.33333  0.33333  1.0000
+  B   B3        1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+CadmiumIodide_PoO2.cif,541,"data_image0
+_chemical_formula_structural       PoO2
+_chemical_formula_sum              ""Po1 O2""
+_cell_length_a       3.39729
+_cell_length_b       3.39729
+_cell_length_c       5.23517
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Po  Po1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.24000  1.0000
+  O   O2        1.0  0.66667  0.33333  0.76000  1.0000
+"
+AntiFluorite_W2O.cif,226,"data_image0
+_chemical_formula_structural       W8O4
+_chemical_formula_sum              ""W8 O4""
+_cell_length_a       5.19394
+_cell_length_b       5.19394
+_cell_length_c       5.19394
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  W   W1        1.0  0.25000  0.25000  0.25000  1.0000
+  W   W2        1.0  0.75000  0.75000  0.25000  1.0000
+  W   W3        1.0  0.75000  0.25000  0.75000  1.0000
+  W   W4        1.0  0.25000  0.75000  0.75000  1.0000
+  W   W5        1.0  0.25000  0.25000  0.75000  1.0000
+  W   W6        1.0  0.75000  0.75000  0.75000  1.0000
+  W   W7        1.0  0.25000  0.75000  0.25000  1.0000
+  W   W8        1.0  0.75000  0.25000  0.25000  1.0000
+  O   O1        1.0  0.00000  0.00000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.50000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.50000  1.0000
+  O   O4        1.0  0.50000  0.50000  0.00000  1.0000
+"
+CadmiumIodide_SiO2.cif,241,"data_image0
+_chemical_formula_structural       SiO2
+_chemical_formula_sum              ""Si1 O2""
+_cell_length_a       2.85535
+_cell_length_b       2.85535
+_cell_length_c       4.1884
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Si  Si1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.24000  1.0000
+  O   O2        1.0  0.66667  0.33333  0.76000  1.0000
+"
+NickelArsenide_TlO.cif,60,"data_image0
+_chemical_formula_structural       Tl2O2
+_chemical_formula_sum              ""Tl2 O2""
+_cell_length_a       3.16599
+_cell_length_b       3.16599
+_cell_length_c       5.22177
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Tl  Tl1       1.0  0.00000  0.00000  0.00000  1.0000
+  Tl  Tl2       1.0  1.00000  1.00000  0.50000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.25000  1.0000
+  O   O2        1.0  0.66667  0.33333  0.75000  1.0000
+"
+AntiFluorite_Mg2O.cif,617,"data_image0
+_chemical_formula_structural       Mg8O4
+_chemical_formula_sum              ""Mg8 O4""
+_cell_length_a       5.33473
+_cell_length_b       5.33473
+_cell_length_c       5.33473
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Mg  Mg1       1.0  0.25000  0.25000  0.25000  1.0000
+  Mg  Mg2       1.0  0.75000  0.75000  0.25000  1.0000
+  Mg  Mg3       1.0  0.75000  0.25000  0.75000  1.0000
+  Mg  Mg4       1.0  0.25000  0.75000  0.75000  1.0000
+  Mg  Mg5       1.0  0.25000  0.25000  0.75000  1.0000
+  Mg  Mg6       1.0  0.75000  0.75000  0.75000  1.0000
+  Mg  Mg7       1.0  0.25000  0.75000  0.25000  1.0000
+  Mg  Mg8       1.0  0.75000  0.25000  0.25000  1.0000
+  O   O1        1.0  0.00000  0.00000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.50000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.50000  1.0000
+  O   O4        1.0  0.50000  0.50000  0.00000  1.0000
+"
+NickelArsenide_CsO.cif,449,"data_image0
+_chemical_formula_structural       Cs2O2
+_chemical_formula_sum              ""Cs2 O2""
+_cell_length_a       4.60223
+_cell_length_b       4.60223
+_cell_length_c       5.82877
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Cs  Cs1       1.0  0.00000  0.00000  0.00000  1.0000
+  Cs  Cs2       1.0  1.00000  1.00000  0.50000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.25000  1.0000
+  O   O2        1.0  0.66667  0.33333  0.75000  1.0000
+"
+CaesiumChloride_PoO.cif,35,"data_image0
+_chemical_formula_structural       PoO
+_chemical_formula_sum              ""Po1 O1""
+_cell_length_a       3.27991
+_cell_length_b       3.27991
+_cell_length_c       3.27991
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Po  Po1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+"
+NickelArsenide_CdO.cif,287,"data_image0
+_chemical_formula_structural       Cd2O2
+_chemical_formula_sum              ""Cd2 O2""
+_cell_length_a       3.07129
+_cell_length_b       3.07129
+_cell_length_c       5.18175
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Cd  Cd1       1.0  0.00000  0.00000  0.00000  1.0000
+  Cd  Cd2       1.0  1.00000  1.00000  0.50000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.25000  1.0000
+  O   O2        1.0  0.66667  0.33333  0.75000  1.0000
+"
+NickelArsenide_ScO.cif,366,"data_image0
+_chemical_formula_structural       Sc2O2
+_chemical_formula_sum              ""Sc2 O2""
+_cell_length_a       3.16599
+_cell_length_b       3.16599
+_cell_length_c       5.22177
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Sc  Sc1       1.0  0.00000  0.00000  0.00000  1.0000
+  Sc  Sc2       1.0  1.00000  1.00000  0.50000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.25000  1.0000
+  O   O2        1.0  0.66667  0.33333  0.75000  1.0000
+"
+ZincBlende_BiO.cif,450,"data_image0
+_chemical_formula_structural       Bi4O4
+_chemical_formula_sum              ""Bi4 O4""
+_cell_length_a       5.07394
+_cell_length_b       5.07394
+_cell_length_c       5.07394
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Bi  Bi1       1.0  0.00000  0.00000  0.00000  1.0000
+  Bi  Bi2       1.0  0.00000  0.50000  0.50000  1.0000
+  Bi  Bi3       1.0  0.50000  0.00000  0.50000  1.0000
+  Bi  Bi4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.25000  0.25000  0.25000  1.0000
+  O   O2        1.0  0.75000  0.75000  0.25000  1.0000
+  O   O3        1.0  0.75000  0.25000  0.75000  1.0000
+  O   O4        1.0  0.25000  0.75000  0.75000  1.0000
+"
+Spinel_CaCa2O4.cif,219,"data_image0
+_chemical_formula_structural       Ca24O32
+_chemical_formula_sum              ""Ca24 O32""
+_cell_length_a       9.68932
+_cell_length_b       9.68932
+_cell_length_c       9.68932
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ca  Ca1       1.0  0.50000  0.50000  0.50000  1.0000
+  Ca  Ca2       1.0  0.50000  0.00000  0.00000  1.0000
+  Ca  Ca3       1.0  0.00000  0.00000  0.50000  1.0000
+  Ca  Ca4       1.0  0.00000  0.50000  0.00000  1.0000
+  Ca  Ca5       1.0  0.25000  0.75000  0.25000  1.0000
+  Ca  Ca6       1.0  0.75000  0.75000  0.75000  1.0000
+  Ca  Ca7       1.0  0.75000  0.25000  0.25000  1.0000
+  Ca  Ca8       1.0  0.25000  0.25000  0.75000  1.0000
+  Ca  Ca9       1.0  0.12500  0.12500  0.12500  1.0000
+  Ca  Ca10      1.0  0.87500  0.37500  0.62500  1.0000
+  Ca  Ca11      1.0  0.37500  0.62500  0.87500  1.0000
+  Ca  Ca12      1.0  0.62500  0.87500  0.37500  1.0000
+  Ca  Ca13      1.0  0.37500  0.87500  0.62500  1.0000
+  Ca  Ca14      1.0  0.87500  0.62500  0.37500  1.0000
+  Ca  Ca15      1.0  0.62500  0.37500  0.87500  1.0000
+  Ca  Ca16      1.0  0.12500  0.62500  0.62500  1.0000
+  Ca  Ca17      1.0  0.87500  0.87500  0.12500  1.0000
+  Ca  Ca18      1.0  0.37500  0.12500  0.37500  1.0000
+  Ca  Ca19      1.0  0.37500  0.37500  0.12500  1.0000
+  Ca  Ca20      1.0  0.87500  0.12500  0.87500  1.0000
+  Ca  Ca21      1.0  0.62500  0.12500  0.62500  1.0000
+  Ca  Ca22      1.0  0.12500  0.87500  0.87500  1.0000
+  Ca  Ca23      1.0  0.12500  0.37500  0.37500  1.0000
+  Ca  Ca24      1.0  0.62500  0.62500  0.12500  1.0000
+  O   O1        1.0  0.36260  0.36260  0.36260  1.0000
+  O   O2        1.0  0.63740  0.13740  0.86260  1.0000
+  O   O3        1.0  0.13740  0.86260  0.63740  1.0000
+  O   O4        1.0  0.86260  0.63740  0.13740  1.0000
+  O   O5        1.0  0.11260  0.61260  0.38740  1.0000
+  O   O6        1.0  0.88740  0.88740  0.88740  1.0000
+  O   O7        1.0  0.61260  0.38740  0.11260  1.0000
+  O   O8        1.0  0.38740  0.11260  0.61260  1.0000
+  O   O9        1.0  0.61260  0.11260  0.38740  1.0000
+  O   O10       1.0  0.11260  0.38740  0.61260  1.0000
+  O   O11       1.0  0.38740  0.61260  0.11260  1.0000
+  O   O12       1.0  0.13740  0.63740  0.86260  1.0000
+  O   O13       1.0  0.63740  0.86260  0.13740  1.0000
+  O   O14       1.0  0.86260  0.13740  0.63740  1.0000
+  O   O15       1.0  0.36260  0.86260  0.86260  1.0000
+  O   O16       1.0  0.63740  0.63740  0.36260  1.0000
+  O   O17       1.0  0.13740  0.36260  0.13740  1.0000
+  O   O18       1.0  0.11260  0.11260  0.88740  1.0000
+  O   O19       1.0  0.88740  0.38740  0.38740  1.0000
+  O   O20       1.0  0.61260  0.88740  0.61260  1.0000
+  O   O21       1.0  0.61260  0.61260  0.88740  1.0000
+  O   O22       1.0  0.11260  0.88740  0.11260  1.0000
+  O   O23       1.0  0.13740  0.13740  0.36260  1.0000
+  O   O24       1.0  0.63740  0.36260  0.63740  1.0000
+  O   O25       1.0  0.86260  0.36260  0.86260  1.0000
+  O   O26       1.0  0.36260  0.63740  0.63740  1.0000
+  O   O27       1.0  0.38740  0.88740  0.38740  1.0000
+  O   O28       1.0  0.88740  0.11260  0.11260  1.0000
+  O   O29       1.0  0.88740  0.61260  0.61260  1.0000
+  O   O30       1.0  0.36260  0.13740  0.13740  1.0000
+  O   O31       1.0  0.86260  0.86260  0.36260  1.0000
+  O   O32       1.0  0.38740  0.38740  0.88740  1.0000
+"
+Spinel_TaTa2O4.cif,472,"data_image0
+_chemical_formula_structural       Ta24O32
+_chemical_formula_sum              ""Ta24 O32""
+_cell_length_a       8.59715
+_cell_length_b       8.59715
+_cell_length_c       8.59715
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ta  Ta1       1.0  0.50000  0.50000  0.50000  1.0000
+  Ta  Ta2       1.0  0.50000  0.00000  0.00000  1.0000
+  Ta  Ta3       1.0  0.00000  0.00000  0.50000  1.0000
+  Ta  Ta4       1.0  0.00000  0.50000  0.00000  1.0000
+  Ta  Ta5       1.0  0.25000  0.75000  0.25000  1.0000
+  Ta  Ta6       1.0  0.75000  0.75000  0.75000  1.0000
+  Ta  Ta7       1.0  0.75000  0.25000  0.25000  1.0000
+  Ta  Ta8       1.0  0.25000  0.25000  0.75000  1.0000
+  Ta  Ta9       1.0  0.12500  0.12500  0.12500  1.0000
+  Ta  Ta10      1.0  0.87500  0.37500  0.62500  1.0000
+  Ta  Ta11      1.0  0.37500  0.62500  0.87500  1.0000
+  Ta  Ta12      1.0  0.62500  0.87500  0.37500  1.0000
+  Ta  Ta13      1.0  0.37500  0.87500  0.62500  1.0000
+  Ta  Ta14      1.0  0.87500  0.62500  0.37500  1.0000
+  Ta  Ta15      1.0  0.62500  0.37500  0.87500  1.0000
+  Ta  Ta16      1.0  0.12500  0.62500  0.62500  1.0000
+  Ta  Ta17      1.0  0.87500  0.87500  0.12500  1.0000
+  Ta  Ta18      1.0  0.37500  0.12500  0.37500  1.0000
+  Ta  Ta19      1.0  0.37500  0.37500  0.12500  1.0000
+  Ta  Ta20      1.0  0.87500  0.12500  0.87500  1.0000
+  Ta  Ta21      1.0  0.62500  0.12500  0.62500  1.0000
+  Ta  Ta22      1.0  0.12500  0.87500  0.87500  1.0000
+  Ta  Ta23      1.0  0.12500  0.37500  0.37500  1.0000
+  Ta  Ta24      1.0  0.62500  0.62500  0.12500  1.0000
+  O   O1        1.0  0.36260  0.36260  0.36260  1.0000
+  O   O2        1.0  0.63740  0.13740  0.86260  1.0000
+  O   O3        1.0  0.13740  0.86260  0.63740  1.0000
+  O   O4        1.0  0.86260  0.63740  0.13740  1.0000
+  O   O5        1.0  0.11260  0.61260  0.38740  1.0000
+  O   O6        1.0  0.88740  0.88740  0.88740  1.0000
+  O   O7        1.0  0.61260  0.38740  0.11260  1.0000
+  O   O8        1.0  0.38740  0.11260  0.61260  1.0000
+  O   O9        1.0  0.61260  0.11260  0.38740  1.0000
+  O   O10       1.0  0.11260  0.38740  0.61260  1.0000
+  O   O11       1.0  0.38740  0.61260  0.11260  1.0000
+  O   O12       1.0  0.13740  0.63740  0.86260  1.0000
+  O   O13       1.0  0.63740  0.86260  0.13740  1.0000
+  O   O14       1.0  0.86260  0.13740  0.63740  1.0000
+  O   O15       1.0  0.36260  0.86260  0.86260  1.0000
+  O   O16       1.0  0.63740  0.63740  0.36260  1.0000
+  O   O17       1.0  0.13740  0.36260  0.13740  1.0000
+  O   O18       1.0  0.11260  0.11260  0.88740  1.0000
+  O   O19       1.0  0.88740  0.38740  0.38740  1.0000
+  O   O20       1.0  0.61260  0.88740  0.61260  1.0000
+  O   O21       1.0  0.61260  0.61260  0.88740  1.0000
+  O   O22       1.0  0.11260  0.88740  0.11260  1.0000
+  O   O23       1.0  0.13740  0.13740  0.36260  1.0000
+  O   O24       1.0  0.63740  0.36260  0.63740  1.0000
+  O   O25       1.0  0.86260  0.36260  0.86260  1.0000
+  O   O26       1.0  0.36260  0.63740  0.63740  1.0000
+  O   O27       1.0  0.38740  0.88740  0.38740  1.0000
+  O   O28       1.0  0.88740  0.11260  0.11260  1.0000
+  O   O29       1.0  0.88740  0.61260  0.61260  1.0000
+  O   O30       1.0  0.36260  0.13740  0.13740  1.0000
+  O   O31       1.0  0.86260  0.86260  0.36260  1.0000
+  O   O32       1.0  0.38740  0.38740  0.88740  1.0000
+"
+AntiFluorite_Ca2O.cif,583,"data_image0
+_chemical_formula_structural       Ca8O4
+_chemical_formula_sum              ""Ca8 O4""
+_cell_length_a       6.2264
+_cell_length_b       6.2264
+_cell_length_c       6.2264
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ca  Ca1       1.0  0.25000  0.25000  0.25000  1.0000
+  Ca  Ca2       1.0  0.75000  0.75000  0.25000  1.0000
+  Ca  Ca3       1.0  0.75000  0.25000  0.75000  1.0000
+  Ca  Ca4       1.0  0.25000  0.75000  0.75000  1.0000
+  Ca  Ca5       1.0  0.25000  0.25000  0.75000  1.0000
+  Ca  Ca6       1.0  0.75000  0.75000  0.75000  1.0000
+  Ca  Ca7       1.0  0.25000  0.75000  0.25000  1.0000
+  Ca  Ca8       1.0  0.75000  0.25000  0.25000  1.0000
+  O   O1        1.0  0.00000  0.00000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.50000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.50000  1.0000
+  O   O4        1.0  0.50000  0.50000  0.00000  1.0000
+"
+RockSalt_SbO.cif,606,"data_image0
+_chemical_formula_structural       Sb4O4
+_chemical_formula_sum              ""Sb4 O4""
+_cell_length_a       4.60767
+_cell_length_b       4.60767
+_cell_length_c       4.60767
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Sb  Sb1       1.0  0.00000  0.00000  0.00000  1.0000
+  Sb  Sb2       1.0  0.00000  0.50000  0.50000  1.0000
+  Sb  Sb3       1.0  0.50000  0.00000  0.50000  1.0000
+  Sb  Sb4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+  O   O2        1.0  0.50000  0.00000  0.00000  1.0000
+  O   O3        1.0  0.00000  0.50000  0.00000  1.0000
+  O   O4        1.0  0.00000  0.00000  0.50000  1.0000
+"
+Fluorite_CrO2.cif,536,"data_image0
+_chemical_formula_structural       Cr4O8
+_chemical_formula_sum              ""Cr4 O8""
+_cell_length_a       5.22445
+_cell_length_b       5.22445
+_cell_length_c       5.22445
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Cr  Cr1       1.0  0.00000  0.00000  0.00000  1.0000
+  Cr  Cr2       1.0  0.00000  0.50000  0.50000  1.0000
+  Cr  Cr3       1.0  0.50000  0.00000  0.50000  1.0000
+  Cr  Cr4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.25000  0.25000  0.25000  1.0000
+  O   O2        1.0  0.75000  0.75000  0.25000  1.0000
+  O   O3        1.0  0.75000  0.25000  0.75000  1.0000
+  O   O4        1.0  0.25000  0.75000  0.75000  1.0000
+  O   O5        1.0  0.25000  0.25000  0.75000  1.0000
+  O   O6        1.0  0.75000  0.75000  0.75000  1.0000
+  O   O7        1.0  0.25000  0.75000  0.25000  1.0000
+  O   O8        1.0  0.75000  0.25000  0.25000  1.0000
+"
+CadmiumChloride_CaO2.cif,143,"data_image0
+_chemical_formula_structural       Ca3O6
+_chemical_formula_sum              ""Ca3 O6""
+_cell_length_a       3.4528
+_cell_length_b       3.4528
+_cell_length_c       16.3607
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ca  Ca1       1.0  0.00000  0.00000  0.00000  1.0000
+  Ca  Ca2       1.0  0.66667  0.33333  0.33333  1.0000
+  Ca  Ca3       1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+CadmiumChloride_BiO2.cif,286,"data_image0
+_chemical_formula_structural       Bi3O6
+_chemical_formula_sum              ""Bi3 O6""
+_cell_length_a       3.3089
+_cell_length_b       3.3089
+_cell_length_c       15.4796
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Bi  Bi1       1.0  0.00000  0.00000  0.00000  1.0000
+  Bi  Bi2       1.0  0.66667  0.33333  0.33333  1.0000
+  Bi  Bi3       1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+RheniumTrioxide_AgO3.cif,417,"data_image0
+_chemical_formula_structural       AgO3
+_chemical_formula_sum              ""Ag1 O3""
+_cell_length_a       3.89912
+_cell_length_b       3.89912
+_cell_length_c       3.89912
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ag  Ag1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.00000  0.50000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.00000  1.0000
+"
+Wurtzite_MgO.cif,393,"data_image0
+_chemical_formula_structural       Mg2O2
+_chemical_formula_sum              ""Mg2 O2""
+_cell_length_a       3.33304
+_cell_length_b       3.33304
+_cell_length_c       5.40564
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Mg  Mg1       1.0  0.33333  0.66667  0.00000  1.0000
+  Mg  Mg2       1.0  0.66667  0.33333  0.50000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.37500  1.0000
+  O   O2        1.0  0.66667  0.33333  0.87500  1.0000
+"
+NickelArsenide_CrO.cif,403,"data_image0
+_chemical_formula_structural       Cr2O2
+_chemical_formula_sum              ""Cr2 O2""
+_cell_length_a       2.77142
+_cell_length_b       2.77142
+_cell_length_c       5.05501
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Cr  Cr1       1.0  0.00000  0.00000  0.00000  1.0000
+  Cr  Cr2       1.0  1.00000  1.00000  0.50000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.25000  1.0000
+  O   O2        1.0  0.66667  0.33333  0.75000  1.0000
+"
+AntiFluorite_Os2O.cif,307,"data_image0
+_chemical_formula_structural       Os8O4
+_chemical_formula_sum              ""Os8 O4""
+_cell_length_a       5.10008
+_cell_length_b       5.10008
+_cell_length_c       5.10008
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Os  Os1       1.0  0.25000  0.25000  0.25000  1.0000
+  Os  Os2       1.0  0.75000  0.75000  0.25000  1.0000
+  Os  Os3       1.0  0.75000  0.25000  0.75000  1.0000
+  Os  Os4       1.0  0.25000  0.75000  0.75000  1.0000
+  Os  Os5       1.0  0.25000  0.25000  0.75000  1.0000
+  Os  Os6       1.0  0.75000  0.75000  0.75000  1.0000
+  Os  Os7       1.0  0.25000  0.75000  0.25000  1.0000
+  Os  Os8       1.0  0.75000  0.25000  0.25000  1.0000
+  O   O1        1.0  0.00000  0.00000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.50000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.50000  1.0000
+  O   O4        1.0  0.50000  0.50000  0.00000  1.0000
+"
+CaesiumChloride_TcO.cif,161,"data_image0
+_chemical_formula_structural       TcO
+_chemical_formula_sum              ""Tc1 O1""
+_cell_length_a       2.66732
+_cell_length_b       2.66732
+_cell_length_c       2.66732
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Tc  Tc1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+"
+Rutile_YO2.cif,71,"data_image0
+_chemical_formula_structural       Y2O4
+_chemical_formula_sum              ""Y2 O4""
+_cell_length_a       4.68902
+_cell_length_b       4.68902
+_cell_length_c       2.95542
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Y   Y1        1.0  0.00000  0.00000  0.00000  1.0000
+  Y   Y2        1.0  0.50000  0.50000  0.50000  1.0000
+  O   O1        1.0  0.30000  0.30000  0.00000  1.0000
+  O   O2        1.0  0.70000  0.70000  0.00000  1.0000
+  O   O3        1.0  0.20000  0.80000  0.50000  1.0000
+  O   O4        1.0  0.80000  0.20000  0.50000  1.0000
+"
+CaesiumChloride_ZnO.cif,622,"data_image0
+_chemical_formula_structural       ZnO
+_chemical_formula_sum              ""Zn1 O1""
+_cell_length_a       2.60898
+_cell_length_b       2.60898
+_cell_length_c       2.60898
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Zn  Zn1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+"
+RockSalt_MoO.cif,468,"data_image0
+_chemical_formula_structural       Mo4O4
+_chemical_formula_sum              ""Mo4 O4""
+_cell_length_a       4.4586
+_cell_length_b       4.4586
+_cell_length_c       4.4586
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Mo  Mo1       1.0  0.00000  0.00000  0.00000  1.0000
+  Mo  Mo2       1.0  0.00000  0.50000  0.50000  1.0000
+  Mo  Mo3       1.0  0.50000  0.00000  0.50000  1.0000
+  Mo  Mo4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+  O   O2        1.0  0.50000  0.00000  0.00000  1.0000
+  O   O3        1.0  0.00000  0.50000  0.00000  1.0000
+  O   O4        1.0  0.00000  0.00000  0.50000  1.0000
+"
+RockSalt_TeO.cif,603,"data_image0
+_chemical_formula_structural       Te4O4
+_chemical_formula_sum              ""Te4 O4""
+_cell_length_a       4.57455
+_cell_length_b       4.57455
+_cell_length_c       4.57455
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Te  Te1       1.0  0.00000  0.00000  0.00000  1.0000
+  Te  Te2       1.0  0.00000  0.50000  0.50000  1.0000
+  Te  Te3       1.0  0.50000  0.00000  0.50000  1.0000
+  Te  Te4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+  O   O2        1.0  0.50000  0.00000  0.00000  1.0000
+  O   O3        1.0  0.00000  0.50000  0.00000  1.0000
+  O   O4        1.0  0.00000  0.00000  0.50000  1.0000
+"
+Rutile_MoO2.cif,293,"data_image0
+_chemical_formula_structural       Mo2O4
+_chemical_formula_sum              ""Mo2 O4""
+_cell_length_a       4.86
+_cell_length_b       4.86
+_cell_length_c       2.79
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Mo  Mo1       1.0  0.00000  0.00000  0.00000  1.0000
+  Mo  Mo2       1.0  0.50000  0.50000  0.50000  1.0000
+  O   O1        1.0  0.30000  0.30000  0.00000  1.0000
+  O   O2        1.0  0.70000  0.70000  0.00000  1.0000
+  O   O3        1.0  0.20000  0.80000  0.50000  1.0000
+  O   O4        1.0  0.80000  0.20000  0.50000  1.0000
+"
+CadmiumChloride_SnO2.cif,582,"data_image0
+_chemical_formula_structural       Sn3O6
+_chemical_formula_sum              ""Sn3 O6""
+_cell_length_a       3.25259
+_cell_length_b       3.25259
+_cell_length_c       15.1348
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Sn  Sn1       1.0  0.00000  0.00000  0.00000  1.0000
+  Sn  Sn2       1.0  0.66667  0.33333  0.33333  1.0000
+  Sn  Sn3       1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+RockSalt_NiO.cif,454,"data_image0
+_chemical_formula_structural       Ni4O4
+_chemical_formula_sum              ""Ni4 O4""
+_cell_length_a       4.1769
+_cell_length_b       4.1769
+_cell_length_c       4.1769
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ni  Ni1       1.0  0.00000  0.00000  0.00000  1.0000
+  Ni  Ni2       1.0  0.00000  0.50000  0.50000  1.0000
+  Ni  Ni3       1.0  0.50000  0.00000  0.50000  1.0000
+  Ni  Ni4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+  O   O2        1.0  0.50000  0.00000  0.00000  1.0000
+  O   O3        1.0  0.00000  0.50000  0.00000  1.0000
+  O   O4        1.0  0.00000  0.00000  0.50000  1.0000
+"
+CaesiumChloride_AuO.cif,100,"data_image0
+_chemical_formula_structural       AuO
+_chemical_formula_sum              ""Au1 O1""
+_cell_length_a       2.73539
+_cell_length_b       2.73539
+_cell_length_c       2.73539
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Au  Au1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+"
+RheniumTrioxide_CaO3.cif,379,"data_image0
+_chemical_formula_structural       CaO3
+_chemical_formula_sum              ""Ca1 O3""
+_cell_length_a       3.90344
+_cell_length_b       3.90344
+_cell_length_c       3.90344
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ca  Ca1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.00000  0.50000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.00000  1.0000
+"
+CadmiumIodide_NbO2.cif,121,"data_image0
+_chemical_formula_structural       NbO2
+_chemical_formula_sum              ""Nb1 O2""
+_cell_length_a       2.98155
+_cell_length_b       2.98155
+_cell_length_c       4.43217
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Nb  Nb1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.24000  1.0000
+  O   O2        1.0  0.66667  0.33333  0.76000  1.0000
+"
+Spinel_FeFe2O4.cif,611,"data_image0
+_chemical_formula_structural       Fe24O32
+_chemical_formula_sum              ""Fe24 O32""
+_cell_length_a       8.13298
+_cell_length_b       8.13298
+_cell_length_c       8.13298
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Fe  Fe1       1.0  0.50000  0.50000  0.50000  1.0000
+  Fe  Fe2       1.0  0.50000  0.00000  0.00000  1.0000
+  Fe  Fe3       1.0  0.00000  0.00000  0.50000  1.0000
+  Fe  Fe4       1.0  0.00000  0.50000  0.00000  1.0000
+  Fe  Fe5       1.0  0.25000  0.75000  0.25000  1.0000
+  Fe  Fe6       1.0  0.75000  0.75000  0.75000  1.0000
+  Fe  Fe7       1.0  0.75000  0.25000  0.25000  1.0000
+  Fe  Fe8       1.0  0.25000  0.25000  0.75000  1.0000
+  Fe  Fe9       1.0  0.12500  0.12500  0.12500  1.0000
+  Fe  Fe10      1.0  0.87500  0.37500  0.62500  1.0000
+  Fe  Fe11      1.0  0.37500  0.62500  0.87500  1.0000
+  Fe  Fe12      1.0  0.62500  0.87500  0.37500  1.0000
+  Fe  Fe13      1.0  0.37500  0.87500  0.62500  1.0000
+  Fe  Fe14      1.0  0.87500  0.62500  0.37500  1.0000
+  Fe  Fe15      1.0  0.62500  0.37500  0.87500  1.0000
+  Fe  Fe16      1.0  0.12500  0.62500  0.62500  1.0000
+  Fe  Fe17      1.0  0.87500  0.87500  0.12500  1.0000
+  Fe  Fe18      1.0  0.37500  0.12500  0.37500  1.0000
+  Fe  Fe19      1.0  0.37500  0.37500  0.12500  1.0000
+  Fe  Fe20      1.0  0.87500  0.12500  0.87500  1.0000
+  Fe  Fe21      1.0  0.62500  0.12500  0.62500  1.0000
+  Fe  Fe22      1.0  0.12500  0.87500  0.87500  1.0000
+  Fe  Fe23      1.0  0.12500  0.37500  0.37500  1.0000
+  Fe  Fe24      1.0  0.62500  0.62500  0.12500  1.0000
+  O   O1        1.0  0.36260  0.36260  0.36260  1.0000
+  O   O2        1.0  0.63740  0.13740  0.86260  1.0000
+  O   O3        1.0  0.13740  0.86260  0.63740  1.0000
+  O   O4        1.0  0.86260  0.63740  0.13740  1.0000
+  O   O5        1.0  0.11260  0.61260  0.38740  1.0000
+  O   O6        1.0  0.88740  0.88740  0.88740  1.0000
+  O   O7        1.0  0.61260  0.38740  0.11260  1.0000
+  O   O8        1.0  0.38740  0.11260  0.61260  1.0000
+  O   O9        1.0  0.61260  0.11260  0.38740  1.0000
+  O   O10       1.0  0.11260  0.38740  0.61260  1.0000
+  O   O11       1.0  0.38740  0.61260  0.11260  1.0000
+  O   O12       1.0  0.13740  0.63740  0.86260  1.0000
+  O   O13       1.0  0.63740  0.86260  0.13740  1.0000
+  O   O14       1.0  0.86260  0.13740  0.63740  1.0000
+  O   O15       1.0  0.36260  0.86260  0.86260  1.0000
+  O   O16       1.0  0.63740  0.63740  0.36260  1.0000
+  O   O17       1.0  0.13740  0.36260  0.13740  1.0000
+  O   O18       1.0  0.11260  0.11260  0.88740  1.0000
+  O   O19       1.0  0.88740  0.38740  0.38740  1.0000
+  O   O20       1.0  0.61260  0.88740  0.61260  1.0000
+  O   O21       1.0  0.61260  0.61260  0.88740  1.0000
+  O   O22       1.0  0.11260  0.88740  0.11260  1.0000
+  O   O23       1.0  0.13740  0.13740  0.36260  1.0000
+  O   O24       1.0  0.63740  0.36260  0.63740  1.0000
+  O   O25       1.0  0.86260  0.36260  0.86260  1.0000
+  O   O26       1.0  0.36260  0.63740  0.63740  1.0000
+  O   O27       1.0  0.38740  0.88740  0.38740  1.0000
+  O   O28       1.0  0.88740  0.11260  0.11260  1.0000
+  O   O29       1.0  0.88740  0.61260  0.61260  1.0000
+  O   O30       1.0  0.36260  0.13740  0.13740  1.0000
+  O   O31       1.0  0.86260  0.86260  0.36260  1.0000
+  O   O32       1.0  0.38740  0.38740  0.88740  1.0000
+"
+CadmiumChloride_IrO2.cif,458,"data_image0
+_chemical_formula_structural       Ir3O6
+_chemical_formula_sum              ""Ir3 O6""
+_cell_length_a       3.15875
+_cell_length_b       3.15875
+_cell_length_c       14.5601
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ir  Ir1       1.0  0.00000  0.00000  0.00000  1.0000
+  Ir  Ir2       1.0  0.66667  0.33333  0.33333  1.0000
+  Ir  Ir3       1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+Spinel_SbSb2O4.cif,248,"data_image0
+_chemical_formula_structural       Sb24O32
+_chemical_formula_sum              ""Sb24 O32""
+_cell_length_a       8.73367
+_cell_length_b       8.73367
+_cell_length_c       8.73367
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Sb  Sb1       1.0  0.50000  0.50000  0.50000  1.0000
+  Sb  Sb2       1.0  0.50000  0.00000  0.00000  1.0000
+  Sb  Sb3       1.0  0.00000  0.00000  0.50000  1.0000
+  Sb  Sb4       1.0  0.00000  0.50000  0.00000  1.0000
+  Sb  Sb5       1.0  0.25000  0.75000  0.25000  1.0000
+  Sb  Sb6       1.0  0.75000  0.75000  0.75000  1.0000
+  Sb  Sb7       1.0  0.75000  0.25000  0.25000  1.0000
+  Sb  Sb8       1.0  0.25000  0.25000  0.75000  1.0000
+  Sb  Sb9       1.0  0.12500  0.12500  0.12500  1.0000
+  Sb  Sb10      1.0  0.87500  0.37500  0.62500  1.0000
+  Sb  Sb11      1.0  0.37500  0.62500  0.87500  1.0000
+  Sb  Sb12      1.0  0.62500  0.87500  0.37500  1.0000
+  Sb  Sb13      1.0  0.37500  0.87500  0.62500  1.0000
+  Sb  Sb14      1.0  0.87500  0.62500  0.37500  1.0000
+  Sb  Sb15      1.0  0.62500  0.37500  0.87500  1.0000
+  Sb  Sb16      1.0  0.12500  0.62500  0.62500  1.0000
+  Sb  Sb17      1.0  0.87500  0.87500  0.12500  1.0000
+  Sb  Sb18      1.0  0.37500  0.12500  0.37500  1.0000
+  Sb  Sb19      1.0  0.37500  0.37500  0.12500  1.0000
+  Sb  Sb20      1.0  0.87500  0.12500  0.87500  1.0000
+  Sb  Sb21      1.0  0.62500  0.12500  0.62500  1.0000
+  Sb  Sb22      1.0  0.12500  0.87500  0.87500  1.0000
+  Sb  Sb23      1.0  0.12500  0.37500  0.37500  1.0000
+  Sb  Sb24      1.0  0.62500  0.62500  0.12500  1.0000
+  O   O1        1.0  0.36260  0.36260  0.36260  1.0000
+  O   O2        1.0  0.63740  0.13740  0.86260  1.0000
+  O   O3        1.0  0.13740  0.86260  0.63740  1.0000
+  O   O4        1.0  0.86260  0.63740  0.13740  1.0000
+  O   O5        1.0  0.11260  0.61260  0.38740  1.0000
+  O   O6        1.0  0.88740  0.88740  0.88740  1.0000
+  O   O7        1.0  0.61260  0.38740  0.11260  1.0000
+  O   O8        1.0  0.38740  0.11260  0.61260  1.0000
+  O   O9        1.0  0.61260  0.11260  0.38740  1.0000
+  O   O10       1.0  0.11260  0.38740  0.61260  1.0000
+  O   O11       1.0  0.38740  0.61260  0.11260  1.0000
+  O   O12       1.0  0.13740  0.63740  0.86260  1.0000
+  O   O13       1.0  0.63740  0.86260  0.13740  1.0000
+  O   O14       1.0  0.86260  0.13740  0.63740  1.0000
+  O   O15       1.0  0.36260  0.86260  0.86260  1.0000
+  O   O16       1.0  0.63740  0.63740  0.36260  1.0000
+  O   O17       1.0  0.13740  0.36260  0.13740  1.0000
+  O   O18       1.0  0.11260  0.11260  0.88740  1.0000
+  O   O19       1.0  0.88740  0.38740  0.38740  1.0000
+  O   O20       1.0  0.61260  0.88740  0.61260  1.0000
+  O   O21       1.0  0.61260  0.61260  0.88740  1.0000
+  O   O22       1.0  0.11260  0.88740  0.11260  1.0000
+  O   O23       1.0  0.13740  0.13740  0.36260  1.0000
+  O   O24       1.0  0.63740  0.36260  0.63740  1.0000
+  O   O25       1.0  0.86260  0.36260  0.86260  1.0000
+  O   O26       1.0  0.36260  0.63740  0.63740  1.0000
+  O   O27       1.0  0.38740  0.88740  0.38740  1.0000
+  O   O28       1.0  0.88740  0.11260  0.11260  1.0000
+  O   O29       1.0  0.88740  0.61260  0.61260  1.0000
+  O   O30       1.0  0.36260  0.13740  0.13740  1.0000
+  O   O31       1.0  0.86260  0.86260  0.36260  1.0000
+  O   O32       1.0  0.38740  0.38740  0.88740  1.0000
+"
+CadmiumChloride_CuO2.cif,347,"data_image0
+_chemical_formula_structural       Cu3O6
+_chemical_formula_sum              ""Cu3 O6""
+_cell_length_a       3.10244
+_cell_length_b       3.10244
+_cell_length_c       14.2153
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Cu  Cu1       1.0  0.00000  0.00000  0.00000  1.0000
+  Cu  Cu2       1.0  0.66667  0.33333  0.33333  1.0000
+  Cu  Cu3       1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+Rutile_VO2.cif,460,"data_image0
+_chemical_formula_structural       V2O4
+_chemical_formula_sum              ""V2 O4""
+_cell_length_a       4.66896
+_cell_length_b       4.66896
+_cell_length_c       3.07798
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  V   V1        1.0  0.00000  0.00000  0.00000  1.0000
+  V   V2        1.0  0.50000  0.50000  0.50000  1.0000
+  O   O1        1.0  0.30000  0.30000  0.00000  1.0000
+  O   O2        1.0  0.70000  0.70000  0.00000  1.0000
+  O   O3        1.0  0.20000  0.80000  0.50000  1.0000
+  O   O4        1.0  0.80000  0.20000  0.50000  1.0000
+"
+CaesiumChloride_YO.cif,567,"data_image0
+_chemical_formula_structural       YO
+_chemical_formula_sum              ""Y1 O1""
+_cell_length_a       3.00765
+_cell_length_b       3.00765
+_cell_length_c       3.00765
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Y   Y1        1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+"
+CaesiumChloride_HfO.cif,589,"data_image0
+_chemical_formula_structural       HfO
+_chemical_formula_sum              ""Hf1 O1""
+_cell_length_a       2.83262
+_cell_length_b       2.83262
+_cell_length_c       2.83262
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Hf  Hf1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+"
+CadmiumChloride_SbO2.cif,61,"data_image0
+_chemical_formula_structural       Sb3O6
+_chemical_formula_sum              ""Sb3 O6""
+_cell_length_a       3.23382
+_cell_length_b       3.23382
+_cell_length_c       15.0199
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Sb  Sb1       1.0  0.00000  0.00000  0.00000  1.0000
+  Sb  Sb2       1.0  0.66667  0.33333  0.33333  1.0000
+  Sb  Sb3       1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+AntiFluorite_Ru2O.cif,459,"data_image0
+_chemical_formula_structural       Ru8O4
+_chemical_formula_sum              ""Ru8 O4""
+_cell_length_a       5.07662
+_cell_length_b       5.07662
+_cell_length_c       5.07662
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ru  Ru1       1.0  0.25000  0.25000  0.25000  1.0000
+  Ru  Ru2       1.0  0.75000  0.75000  0.25000  1.0000
+  Ru  Ru3       1.0  0.75000  0.25000  0.75000  1.0000
+  Ru  Ru4       1.0  0.25000  0.75000  0.75000  1.0000
+  Ru  Ru5       1.0  0.25000  0.25000  0.75000  1.0000
+  Ru  Ru6       1.0  0.75000  0.75000  0.75000  1.0000
+  Ru  Ru7       1.0  0.25000  0.75000  0.25000  1.0000
+  Ru  Ru8       1.0  0.75000  0.25000  0.25000  1.0000
+  O   O1        1.0  0.00000  0.00000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.50000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.50000  1.0000
+  O   O4        1.0  0.50000  0.50000  0.00000  1.0000
+"
+ZincBlende_InO.cif,199,"data_image0
+_chemical_formula_structural       In4O4
+_chemical_formula_sum              ""In4 O4""
+_cell_length_a       4.88757
+_cell_length_b       4.88757
+_cell_length_c       4.88757
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  In  In1       1.0  0.00000  0.00000  0.00000  1.0000
+  In  In2       1.0  0.00000  0.50000  0.50000  1.0000
+  In  In3       1.0  0.50000  0.00000  0.50000  1.0000
+  In  In4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.25000  0.25000  0.25000  1.0000
+  O   O2        1.0  0.75000  0.75000  0.25000  1.0000
+  O   O3        1.0  0.75000  0.25000  0.75000  1.0000
+  O   O4        1.0  0.25000  0.75000  0.75000  1.0000
+"
+RheniumTrioxide_TlO3.cif,349,"data_image0
+_chemical_formula_structural       TlO3
+_chemical_formula_sum              ""Tl1 O3""
+_cell_length_a       3.9002
+_cell_length_b       3.9002
+_cell_length_c       3.9002
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Tl  Tl1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.00000  0.50000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.00000  1.0000
+"
+CaesiumChloride_AgO.cif,190,"data_image0
+_chemical_formula_structural       AgO
+_chemical_formula_sum              ""Ag1 O1""
+_cell_length_a       2.73539
+_cell_length_b       2.73539
+_cell_length_c       2.73539
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ag  Ag1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+"
+CaesiumChloride_CaO.cif,18,"data_image0
+_chemical_formula_structural       CaO
+_chemical_formula_sum              ""Ca1 O1""
+_cell_length_a       3.12434
+_cell_length_b       3.12434
+_cell_length_c       3.12434
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ca  Ca1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+"
+Rutile_FeO2.cif,320,"data_image0
+_chemical_formula_structural       Fe2O4
+_chemical_formula_sum              ""Fe2 O4""
+_cell_length_a       4.66645
+_cell_length_b       4.66645
+_cell_length_c       3.0933
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Fe  Fe1       1.0  0.00000  0.00000  0.00000  1.0000
+  Fe  Fe2       1.0  0.50000  0.50000  0.50000  1.0000
+  O   O1        1.0  0.30000  0.30000  0.00000  1.0000
+  O   O2        1.0  0.70000  0.70000  0.00000  1.0000
+  O   O3        1.0  0.20000  0.80000  0.50000  1.0000
+  O   O4        1.0  0.80000  0.20000  0.50000  1.0000
+"
+ZincBlende_CoO.cif,457,"data_image0
+_chemical_formula_structural       Co4O4
+_chemical_formula_sum              ""Co4 O4""
+_cell_length_a       4.34918
+_cell_length_b       4.34918
+_cell_length_c       4.34918
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Co  Co1       1.0  0.00000  0.00000  0.00000  1.0000
+  Co  Co2       1.0  0.00000  0.50000  0.50000  1.0000
+  Co  Co3       1.0  0.50000  0.00000  0.50000  1.0000
+  Co  Co4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.25000  0.25000  0.25000  1.0000
+  O   O2        1.0  0.75000  0.75000  0.25000  1.0000
+  O   O3        1.0  0.75000  0.25000  0.75000  1.0000
+  O   O4        1.0  0.25000  0.75000  0.75000  1.0000
+"
+CadmiumChloride_FeO2.cif,633,"data_image0
+_chemical_formula_structural       Fe3O6
+_chemical_formula_sum              ""Fe3 O6""
+_cell_length_a       3.09618
+_cell_length_b       3.09618
+_cell_length_c       14.177
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Fe  Fe1       1.0  0.00000  0.00000  0.00000  1.0000
+  Fe  Fe2       1.0  0.66667  0.33333  0.33333  1.0000
+  Fe  Fe3       1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+Spinel_TiTi2O4.cif,344,"data_image0
+_chemical_formula_structural       Ti24O32
+_chemical_formula_sum              ""Ti24 O32""
+_cell_length_a       8.54255
+_cell_length_b       8.54255
+_cell_length_c       8.54255
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ti  Ti1       1.0  0.50000  0.50000  0.50000  1.0000
+  Ti  Ti2       1.0  0.50000  0.00000  0.00000  1.0000
+  Ti  Ti3       1.0  0.00000  0.00000  0.50000  1.0000
+  Ti  Ti4       1.0  0.00000  0.50000  0.00000  1.0000
+  Ti  Ti5       1.0  0.25000  0.75000  0.25000  1.0000
+  Ti  Ti6       1.0  0.75000  0.75000  0.75000  1.0000
+  Ti  Ti7       1.0  0.75000  0.25000  0.25000  1.0000
+  Ti  Ti8       1.0  0.25000  0.25000  0.75000  1.0000
+  Ti  Ti9       1.0  0.12500  0.12500  0.12500  1.0000
+  Ti  Ti10      1.0  0.87500  0.37500  0.62500  1.0000
+  Ti  Ti11      1.0  0.37500  0.62500  0.87500  1.0000
+  Ti  Ti12      1.0  0.62500  0.87500  0.37500  1.0000
+  Ti  Ti13      1.0  0.37500  0.87500  0.62500  1.0000
+  Ti  Ti14      1.0  0.87500  0.62500  0.37500  1.0000
+  Ti  Ti15      1.0  0.62500  0.37500  0.87500  1.0000
+  Ti  Ti16      1.0  0.12500  0.62500  0.62500  1.0000
+  Ti  Ti17      1.0  0.87500  0.87500  0.12500  1.0000
+  Ti  Ti18      1.0  0.37500  0.12500  0.37500  1.0000
+  Ti  Ti19      1.0  0.37500  0.37500  0.12500  1.0000
+  Ti  Ti20      1.0  0.87500  0.12500  0.87500  1.0000
+  Ti  Ti21      1.0  0.62500  0.12500  0.62500  1.0000
+  Ti  Ti22      1.0  0.12500  0.87500  0.87500  1.0000
+  Ti  Ti23      1.0  0.12500  0.37500  0.37500  1.0000
+  Ti  Ti24      1.0  0.62500  0.62500  0.12500  1.0000
+  O   O1        1.0  0.36260  0.36260  0.36260  1.0000
+  O   O2        1.0  0.63740  0.13740  0.86260  1.0000
+  O   O3        1.0  0.13740  0.86260  0.63740  1.0000
+  O   O4        1.0  0.86260  0.63740  0.13740  1.0000
+  O   O5        1.0  0.11260  0.61260  0.38740  1.0000
+  O   O6        1.0  0.88740  0.88740  0.88740  1.0000
+  O   O7        1.0  0.61260  0.38740  0.11260  1.0000
+  O   O8        1.0  0.38740  0.11260  0.61260  1.0000
+  O   O9        1.0  0.61260  0.11260  0.38740  1.0000
+  O   O10       1.0  0.11260  0.38740  0.61260  1.0000
+  O   O11       1.0  0.38740  0.61260  0.11260  1.0000
+  O   O12       1.0  0.13740  0.63740  0.86260  1.0000
+  O   O13       1.0  0.63740  0.86260  0.13740  1.0000
+  O   O14       1.0  0.86260  0.13740  0.63740  1.0000
+  O   O15       1.0  0.36260  0.86260  0.86260  1.0000
+  O   O16       1.0  0.63740  0.63740  0.36260  1.0000
+  O   O17       1.0  0.13740  0.36260  0.13740  1.0000
+  O   O18       1.0  0.11260  0.11260  0.88740  1.0000
+  O   O19       1.0  0.88740  0.38740  0.38740  1.0000
+  O   O20       1.0  0.61260  0.88740  0.61260  1.0000
+  O   O21       1.0  0.61260  0.61260  0.88740  1.0000
+  O   O22       1.0  0.11260  0.88740  0.11260  1.0000
+  O   O23       1.0  0.13740  0.13740  0.36260  1.0000
+  O   O24       1.0  0.63740  0.36260  0.63740  1.0000
+  O   O25       1.0  0.86260  0.36260  0.86260  1.0000
+  O   O26       1.0  0.36260  0.63740  0.63740  1.0000
+  O   O27       1.0  0.38740  0.88740  0.38740  1.0000
+  O   O28       1.0  0.88740  0.11260  0.11260  1.0000
+  O   O29       1.0  0.88740  0.61260  0.61260  1.0000
+  O   O30       1.0  0.36260  0.13740  0.13740  1.0000
+  O   O31       1.0  0.86260  0.86260  0.36260  1.0000
+  O   O32       1.0  0.38740  0.38740  0.88740  1.0000
+"
+AntiFluorite_Mn2O.cif,266,"data_image0
+_chemical_formula_structural       Mn8O4
+_chemical_formula_sum              ""Mn8 O4""
+_cell_length_a       4.91236
+_cell_length_b       4.91236
+_cell_length_c       4.91236
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Mn  Mn1       1.0  0.25000  0.25000  0.25000  1.0000
+  Mn  Mn2       1.0  0.75000  0.75000  0.25000  1.0000
+  Mn  Mn3       1.0  0.75000  0.25000  0.75000  1.0000
+  Mn  Mn4       1.0  0.25000  0.75000  0.75000  1.0000
+  Mn  Mn5       1.0  0.25000  0.25000  0.75000  1.0000
+  Mn  Mn6       1.0  0.75000  0.75000  0.75000  1.0000
+  Mn  Mn7       1.0  0.25000  0.75000  0.25000  1.0000
+  Mn  Mn8       1.0  0.75000  0.25000  0.25000  1.0000
+  O   O1        1.0  0.00000  0.00000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.50000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.50000  1.0000
+  O   O4        1.0  0.50000  0.50000  0.00000  1.0000
+"
+AntiFluorite_V2O.cif,3,"data_image0
+_chemical_formula_structural       V8O4
+_chemical_formula_sum              ""V8 O4""
+_cell_length_a       5.00622
+_cell_length_b       5.00622
+_cell_length_c       5.00622
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  V   V1        1.0  0.25000  0.25000  0.25000  1.0000
+  V   V2        1.0  0.75000  0.75000  0.25000  1.0000
+  V   V3        1.0  0.75000  0.25000  0.75000  1.0000
+  V   V4        1.0  0.25000  0.75000  0.75000  1.0000
+  V   V5        1.0  0.25000  0.25000  0.75000  1.0000
+  V   V6        1.0  0.75000  0.75000  0.75000  1.0000
+  V   V7        1.0  0.25000  0.75000  0.25000  1.0000
+  V   V8        1.0  0.75000  0.25000  0.25000  1.0000
+  O   O1        1.0  0.00000  0.00000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.50000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.50000  1.0000
+  O   O4        1.0  0.50000  0.50000  0.00000  1.0000
+"
+NickelArsenide_CaO.cif,528,"data_image0
+_chemical_formula_structural       Ca2O2
+_chemical_formula_sum              ""Ca2 O2""
+_cell_length_a       3.63948
+_cell_length_b       3.63948
+_cell_length_c       5.42188
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ca  Ca1       1.0  0.00000  0.00000  0.00000  1.0000
+  Ca  Ca2       1.0  1.00000  1.00000  0.50000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.25000  1.0000
+  O   O2        1.0  0.66667  0.33333  0.75000  1.0000
+"
+Wurtzite_IrO.cif,436,"data_image0
+_chemical_formula_structural       Ir2O2
+_chemical_formula_sum              ""Ir2 O2""
+_cell_length_a       3.18668
+_cell_length_b       3.18668
+_cell_length_c       5.16055
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ir  Ir1       1.0  0.33333  0.66667  0.00000  1.0000
+  Ir  Ir2       1.0  0.66667  0.33333  0.50000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.37500  1.0000
+  O   O2        1.0  0.66667  0.33333  0.87500  1.0000
+"
+CaesiumChloride_HgO.cif,556,"data_image0
+_chemical_formula_structural       HgO
+_chemical_formula_sum              ""Hg1 O1""
+_cell_length_a       2.78401
+_cell_length_b       2.78401
+_cell_length_c       2.78401
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Hg  Hg1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+"
+CadmiumChloride_WO2.cif,52,"data_image0
+_chemical_formula_structural       W3O6
+_chemical_formula_sum              ""W3 O6""
+_cell_length_a       3.17752
+_cell_length_b       3.17752
+_cell_length_c       14.6751
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  W   W1        1.0  0.00000  0.00000  0.00000  1.0000
+  W   W2        1.0  0.66667  0.33333  0.33333  1.0000
+  W   W3        1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+Rutile_PoO2.cif,386,"data_image0
+_chemical_formula_structural       Po2O4
+_chemical_formula_sum              ""Po2 O4""
+_cell_length_a       4.70306
+_cell_length_b       4.70306
+_cell_length_c       2.86963
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Po  Po1       1.0  0.00000  0.00000  0.00000  1.0000
+  Po  Po2       1.0  0.50000  0.50000  0.50000  1.0000
+  O   O1        1.0  0.30000  0.30000  0.00000  1.0000
+  O   O2        1.0  0.70000  0.70000  0.00000  1.0000
+  O   O3        1.0  0.20000  0.80000  0.50000  1.0000
+  O   O4        1.0  0.80000  0.20000  0.50000  1.0000
+"
+CadmiumChloride_CrO2.cif,609,"data_image0
+_chemical_formula_structural       Cr3O6
+_chemical_formula_sum              ""Cr3 O6""
+_cell_length_a       3.10869
+_cell_length_b       3.10869
+_cell_length_c       14.2537
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Cr  Cr1       1.0  0.00000  0.00000  0.00000  1.0000
+  Cr  Cr2       1.0  0.66667  0.33333  0.33333  1.0000
+  Cr  Cr3       1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+Fluorite_TcO2.cif,465,"data_image0
+_chemical_formula_structural       Tc4O8
+_chemical_formula_sum              ""Tc4 O8""
+_cell_length_a       5.29442
+_cell_length_b       5.29442
+_cell_length_c       5.29442
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Tc  Tc1       1.0  0.00000  0.00000  0.00000  1.0000
+  Tc  Tc2       1.0  0.00000  0.50000  0.50000  1.0000
+  Tc  Tc3       1.0  0.50000  0.00000  0.50000  1.0000
+  Tc  Tc4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.25000  0.25000  0.25000  1.0000
+  O   O2        1.0  0.75000  0.75000  0.25000  1.0000
+  O   O3        1.0  0.75000  0.25000  0.75000  1.0000
+  O   O4        1.0  0.25000  0.75000  0.75000  1.0000
+  O   O5        1.0  0.25000  0.25000  0.75000  1.0000
+  O   O6        1.0  0.75000  0.75000  0.75000  1.0000
+  O   O7        1.0  0.25000  0.75000  0.25000  1.0000
+  O   O8        1.0  0.75000  0.25000  0.25000  1.0000
+"
+CadmiumChloride_BeO2.cif,404,"data_image0
+_chemical_formula_structural       Be3O6
+_chemical_formula_sum              ""Be3 O6""
+_cell_length_a       2.921
+_cell_length_b       2.921
+_cell_length_c       13.1044
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Be  Be1       1.0  0.00000  0.00000  0.00000  1.0000
+  Be  Be2       1.0  0.66667  0.33333  0.33333  1.0000
+  Be  Be3       1.0  0.33333  0.66667  0.66667  1.0000
+  O   O1        1.0  0.00000  0.00000  0.26000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.74000  1.0000
+  O   O3        1.0  0.66667  0.33333  0.59333  1.0000
+  O   O4        1.0  0.66667  0.33333  0.07333  1.0000
+  O   O5        1.0  0.33333  0.66667  0.92667  1.0000
+  O   O6        1.0  0.33333  0.66667  0.40667  1.0000
+"
+RheniumTrioxide_SrO3.cif,119,"data_image0
+_chemical_formula_structural       SrO3
+_chemical_formula_sum              ""Sr1 O3""
+_cell_length_a       3.90527
+_cell_length_b       3.90527
+_cell_length_c       3.90527
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Sr  Sr1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.00000  0.50000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.00000  1.0000
+"
+Fluorite_RbO2.cif,430,"data_image0
+_chemical_formula_structural       Rb4O8
+_chemical_formula_sum              ""Rb4 O8""
+_cell_length_a       6.07289
+_cell_length_b       6.07289
+_cell_length_c       6.07289
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Rb  Rb1       1.0  0.00000  0.00000  0.00000  1.0000
+  Rb  Rb2       1.0  0.00000  0.50000  0.50000  1.0000
+  Rb  Rb3       1.0  0.50000  0.00000  0.50000  1.0000
+  Rb  Rb4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.25000  0.25000  0.25000  1.0000
+  O   O2        1.0  0.75000  0.75000  0.25000  1.0000
+  O   O3        1.0  0.75000  0.25000  0.75000  1.0000
+  O   O4        1.0  0.25000  0.75000  0.75000  1.0000
+  O   O5        1.0  0.25000  0.25000  0.75000  1.0000
+  O   O6        1.0  0.75000  0.75000  0.75000  1.0000
+  O   O7        1.0  0.25000  0.75000  0.25000  1.0000
+  O   O8        1.0  0.75000  0.25000  0.25000  1.0000
+"
+NickelArsenide_PdO.cif,461,"data_image0
+_chemical_formula_structural       Pd2O2
+_chemical_formula_sum              ""Pd2 O2""
+_cell_length_a       2.91346
+_cell_length_b       2.91346
+_cell_length_c       5.11505
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Pd  Pd1       1.0  0.00000  0.00000  0.00000  1.0000
+  Pd  Pd2       1.0  1.00000  1.00000  0.50000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.25000  1.0000
+  O   O2        1.0  0.66667  0.33333  0.75000  1.0000
+"
+RheniumTrioxide_OsO3.cif,73,"data_image0
+_chemical_formula_structural       OsO3
+_chemical_formula_sum              ""Os1 O3""
+_cell_length_a       3.89826
+_cell_length_b       3.89826
+_cell_length_c       3.89826
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Os  Os1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.00000  0.50000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.00000  1.0000
+"
+Rutile_TaO2.cif,79,"data_image0
+_chemical_formula_structural       Ta2O4
+_chemical_formula_sum              ""Ta2 O4""
+_cell_length_a       4.709
+_cell_length_b       4.709
+_cell_length_c       3.065
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ta  Ta1       1.0  0.00000  0.00000  0.00000  1.0000
+  Ta  Ta2       1.0  0.50000  0.50000  0.50000  1.0000
+  O   O1        1.0  0.30000  0.30000  0.00000  1.0000
+  O   O2        1.0  0.70000  0.70000  0.00000  1.0000
+  O   O3        1.0  0.20000  0.80000  0.50000  1.0000
+  O   O4        1.0  0.80000  0.20000  0.50000  1.0000
+"
+ZincBlende_AuO.cif,247,"data_image0
+_chemical_formula_structural       Au4O4
+_chemical_formula_sum              ""Au4 O4""
+_cell_length_a       4.72191
+_cell_length_b       4.72191
+_cell_length_c       4.72191
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Au  Au1       1.0  0.00000  0.00000  0.00000  1.0000
+  Au  Au2       1.0  0.00000  0.50000  0.50000  1.0000
+  Au  Au3       1.0  0.50000  0.00000  0.50000  1.0000
+  Au  Au4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.25000  0.25000  0.25000  1.0000
+  O   O2        1.0  0.75000  0.75000  0.25000  1.0000
+  O   O3        1.0  0.75000  0.25000  0.75000  1.0000
+  O   O4        1.0  0.25000  0.75000  0.75000  1.0000
+"
+RockSalt_GaO.cif,479,"data_image0
+_chemical_formula_structural       Ga4O4
+_chemical_formula_sum              ""Ga4 O4""
+_cell_length_a       4.37578
+_cell_length_b       4.37578
+_cell_length_c       4.37578
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ga  Ga1       1.0  0.00000  0.00000  0.00000  1.0000
+  Ga  Ga2       1.0  0.00000  0.50000  0.50000  1.0000
+  Ga  Ga3       1.0  0.50000  0.00000  0.50000  1.0000
+  Ga  Ga4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.50000  0.50000  0.50000  1.0000
+  O   O2        1.0  0.50000  0.00000  0.00000  1.0000
+  O   O3        1.0  0.00000  0.50000  0.00000  1.0000
+  O   O4        1.0  0.00000  0.00000  0.50000  1.0000
+"
+Fluorite_PdO2.cif,473,"data_image0
+_chemical_formula_structural       Pd4O8
+_chemical_formula_sum              ""Pd4 O8""
+_cell_length_a       5.30317
+_cell_length_b       5.30317
+_cell_length_c       5.30317
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Pd  Pd1       1.0  0.00000  0.00000  0.00000  1.0000
+  Pd  Pd2       1.0  0.00000  0.50000  0.50000  1.0000
+  Pd  Pd3       1.0  0.50000  0.00000  0.50000  1.0000
+  Pd  Pd4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.25000  0.25000  0.25000  1.0000
+  O   O2        1.0  0.75000  0.75000  0.25000  1.0000
+  O   O3        1.0  0.75000  0.25000  0.75000  1.0000
+  O   O4        1.0  0.25000  0.75000  0.75000  1.0000
+  O   O5        1.0  0.25000  0.25000  0.75000  1.0000
+  O   O6        1.0  0.75000  0.75000  0.75000  1.0000
+  O   O7        1.0  0.25000  0.75000  0.25000  1.0000
+  O   O8        1.0  0.75000  0.25000  0.25000  1.0000
+"
+AntiFluorite_Ag2O.cif,625,"data_image0
+_chemical_formula_structural       Ag8O4
+_chemical_formula_sum              ""Ag8 O4""
+_cell_length_a       5.2878
+_cell_length_b       5.2878
+_cell_length_c       5.2878
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ag  Ag1       1.0  0.25000  0.25000  0.25000  1.0000
+  Ag  Ag2       1.0  0.75000  0.75000  0.25000  1.0000
+  Ag  Ag3       1.0  0.75000  0.25000  0.75000  1.0000
+  Ag  Ag4       1.0  0.25000  0.75000  0.75000  1.0000
+  Ag  Ag5       1.0  0.25000  0.25000  0.75000  1.0000
+  Ag  Ag6       1.0  0.75000  0.75000  0.75000  1.0000
+  Ag  Ag7       1.0  0.25000  0.75000  0.25000  1.0000
+  Ag  Ag8       1.0  0.75000  0.25000  0.25000  1.0000
+  O   O1        1.0  0.00000  0.00000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.50000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.50000  1.0000
+  O   O4        1.0  0.50000  0.50000  0.00000  1.0000
+"
+Rutile_GeO2.cif,598,"data_image0
+_chemical_formula_structural       Ge2O4
+_chemical_formula_sum              ""Ge2 O4""
+_cell_length_a       4.395
+_cell_length_b       4.395
+_cell_length_c       2.859
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Ge  Ge1       1.0  0.00000  0.00000  0.00000  1.0000
+  Ge  Ge2       1.0  0.50000  0.50000  0.50000  1.0000
+  O   O1        1.0  0.30700  0.30700  0.00000  1.0000
+  O   O2        1.0  0.69300  0.69300  0.00000  1.0000
+  O   O3        1.0  0.19300  0.80700  0.50000  1.0000
+  O   O4        1.0  0.80700  0.19300  0.50000  1.0000
+"
+ZincBlende_PtO.cif,496,"data_image0
+_chemical_formula_structural       Pt4O4
+_chemical_formula_sum              ""Pt4 O4""
+_cell_length_a       4.63908
+_cell_length_b       4.63908
+_cell_length_c       4.63908
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Pt  Pt1       1.0  0.00000  0.00000  0.00000  1.0000
+  Pt  Pt2       1.0  0.00000  0.50000  0.50000  1.0000
+  Pt  Pt3       1.0  0.50000  0.00000  0.50000  1.0000
+  Pt  Pt4       1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.25000  0.25000  0.25000  1.0000
+  O   O2        1.0  0.75000  0.75000  0.25000  1.0000
+  O   O3        1.0  0.75000  0.25000  0.75000  1.0000
+  O   O4        1.0  0.25000  0.75000  0.75000  1.0000
+"
+RheniumTrioxide_AlO3.cif,40,"data_image0
+_chemical_formula_structural       AlO3
+_chemical_formula_sum              ""Al1 O3""
+_cell_length_a       3.89815
+_cell_length_b       3.89815
+_cell_length_c       3.89815
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Al  Al1       1.0  0.00000  0.00000  0.00000  1.0000
+  O   O1        1.0  0.00000  0.50000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.00000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.00000  1.0000
+"
+Wurtzite_CoO.cif,642,"data_image0
+_chemical_formula_structural       Co2O2
+_chemical_formula_sum              ""Co2 O2""
+_cell_length_a       3.00779
+_cell_length_b       3.00779
+_cell_length_c       4.86101
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Co  Co1       1.0  0.33333  0.66667  0.00000  1.0000
+  Co  Co2       1.0  0.66667  0.33333  0.50000  1.0000
+  O   O1        1.0  0.33333  0.66667  0.37500  1.0000
+  O   O2        1.0  0.66667  0.33333  0.87500  1.0000
+"
+AntiFluorite_Rh2O.cif,369,"data_image0
+_chemical_formula_structural       Rh8O4
+_chemical_formula_sum              ""Rh8 O4""
+_cell_length_a       5.07662
+_cell_length_b       5.07662
+_cell_length_c       5.07662
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Rh  Rh1       1.0  0.25000  0.25000  0.25000  1.0000
+  Rh  Rh2       1.0  0.75000  0.75000  0.25000  1.0000
+  Rh  Rh3       1.0  0.75000  0.25000  0.75000  1.0000
+  Rh  Rh4       1.0  0.25000  0.75000  0.75000  1.0000
+  Rh  Rh5       1.0  0.25000  0.25000  0.75000  1.0000
+  Rh  Rh6       1.0  0.75000  0.75000  0.75000  1.0000
+  Rh  Rh7       1.0  0.25000  0.75000  0.25000  1.0000
+  Rh  Rh8       1.0  0.75000  0.25000  0.25000  1.0000
+  O   O1        1.0  0.00000  0.00000  0.00000  1.0000
+  O   O2        1.0  0.00000  0.50000  0.50000  1.0000
+  O   O3        1.0  0.50000  0.00000  0.50000  1.0000
+  O   O4        1.0  0.50000  0.50000  0.00000  1.0000
+"
+Spinel_AlAl2O4.cif,229,"data_image0
+_chemical_formula_structural       Al24O32
+_chemical_formula_sum              ""Al24 O32""
+_cell_length_a       8.35142
+_cell_length_b       8.35142
+_cell_length_c       8.35142
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Al  Al1       1.0  0.50000  0.50000  0.50000  1.0000
+  Al  Al2       1.0  0.50000  0.00000  0.00000  1.0000
+  Al  Al3       1.0  0.00000  0.00000  0.50000  1.0000
+  Al  Al4       1.0  0.00000  0.50000  0.00000  1.0000
+  Al  Al5       1.0  0.25000  0.75000  0.25000  1.0000
+  Al  Al6       1.0  0.75000  0.75000  0.75000  1.0000
+  Al  Al7       1.0  0.75000  0.25000  0.25000  1.0000
+  Al  Al8       1.0  0.25000  0.25000  0.75000  1.0000
+  Al  Al9       1.0  0.12500  0.12500  0.12500  1.0000
+  Al  Al10      1.0  0.87500  0.37500  0.62500  1.0000
+  Al  Al11      1.0  0.37500  0.62500  0.87500  1.0000
+  Al  Al12      1.0  0.62500  0.87500  0.37500  1.0000
+  Al  Al13      1.0  0.37500  0.87500  0.62500  1.0000
+  Al  Al14      1.0  0.87500  0.62500  0.37500  1.0000
+  Al  Al15      1.0  0.62500  0.37500  0.87500  1.0000
+  Al  Al16      1.0  0.12500  0.62500  0.62500  1.0000
+  Al  Al17      1.0  0.87500  0.87500  0.12500  1.0000
+  Al  Al18      1.0  0.37500  0.12500  0.37500  1.0000
+  Al  Al19      1.0  0.37500  0.37500  0.12500  1.0000
+  Al  Al20      1.0  0.87500  0.12500  0.87500  1.0000
+  Al  Al21      1.0  0.62500  0.12500  0.62500  1.0000
+  Al  Al22      1.0  0.12500  0.87500  0.87500  1.0000
+  Al  Al23      1.0  0.12500  0.37500  0.37500  1.0000
+  Al  Al24      1.0  0.62500  0.62500  0.12500  1.0000
+  O   O1        1.0  0.36260  0.36260  0.36260  1.0000
+  O   O2        1.0  0.63740  0.13740  0.86260  1.0000
+  O   O3        1.0  0.13740  0.86260  0.63740  1.0000
+  O   O4        1.0  0.86260  0.63740  0.13740  1.0000
+  O   O5        1.0  0.11260  0.61260  0.38740  1.0000
+  O   O6        1.0  0.88740  0.88740  0.88740  1.0000
+  O   O7        1.0  0.61260  0.38740  0.11260  1.0000
+  O   O8        1.0  0.38740  0.11260  0.61260  1.0000
+  O   O9        1.0  0.61260  0.11260  0.38740  1.0000
+  O   O10       1.0  0.11260  0.38740  0.61260  1.0000
+  O   O11       1.0  0.38740  0.61260  0.11260  1.0000
+  O   O12       1.0  0.13740  0.63740  0.86260  1.0000
+  O   O13       1.0  0.63740  0.86260  0.13740  1.0000
+  O   O14       1.0  0.86260  0.13740  0.63740  1.0000
+  O   O15       1.0  0.36260  0.86260  0.86260  1.0000
+  O   O16       1.0  0.63740  0.63740  0.36260  1.0000
+  O   O17       1.0  0.13740  0.36260  0.13740  1.0000
+  O   O18       1.0  0.11260  0.11260  0.88740  1.0000
+  O   O19       1.0  0.88740  0.38740  0.38740  1.0000
+  O   O20       1.0  0.61260  0.88740  0.61260  1.0000
+  O   O21       1.0  0.61260  0.61260  0.88740  1.0000
+  O   O22       1.0  0.11260  0.88740  0.11260  1.0000
+  O   O23       1.0  0.13740  0.13740  0.36260  1.0000
+  O   O24       1.0  0.63740  0.36260  0.63740  1.0000
+  O   O25       1.0  0.86260  0.36260  0.86260  1.0000
+  O   O26       1.0  0.36260  0.63740  0.63740  1.0000
+  O   O27       1.0  0.38740  0.88740  0.38740  1.0000
+  O   O28       1.0  0.88740  0.11260  0.11260  1.0000
+  O   O29       1.0  0.88740  0.61260  0.61260  1.0000
+  O   O30       1.0  0.36260  0.13740  0.13740  1.0000
+  O   O31       1.0  0.86260  0.86260  0.36260  1.0000
+  O   O32       1.0  0.38740  0.38740  0.88740  1.0000
+"
+ZincBlende_VO.cif,179,"data_image0
+_chemical_formula_structural       V4O4
+_chemical_formula_sum              ""V4 O4""
+_cell_length_a       4.47342
+_cell_length_b       4.47342
+_cell_length_c       4.47342
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_space_group_name_H-M_alt    ""P 1""
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  V   V1        1.0  0.00000  0.00000  0.00000  1.0000
+  V   V2        1.0  0.00000  0.50000  0.50000  1.0000
+  V   V3        1.0  0.50000  0.00000  0.50000  1.0000
+  V   V4        1.0  0.50000  0.50000  0.00000  1.0000
+  O   O1        1.0  0.25000  0.25000  0.25000  1.0000
+  O   O2        1.0  0.75000  0.75000  0.25000  1.0000
+  O   O3        1.0  0.75000  0.25000  0.75000  1.0000
+  O   O4        1.0  0.25000  0.75000  0.75000  1.0000
+"
